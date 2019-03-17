@@ -1,7 +1,7 @@
 section.about {
   padding: 4em 0;
 
-  > .title {
+  > .container > .title {
     font-weight: 400;
     color: $color-green;
   }
@@ -41,6 +41,40 @@ section.about {
 
       .description {
         padding-top: 2.5em;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  section.about {
+    padding: 2em 0;
+
+    .content {
+      padding-top: 2.25em;
+      padding-bottom: 0;
+
+      flex-wrap: wrap;
+
+      img {
+        width: 100%;
+        margin-bottom: 1.5em;
+      }
+
+      > .text {
+        padding: 0;
+        padding-bottom: 1.5em;
+      }
+    }
+
+    .content-list {
+      .content-item {
+        padding-bottom: 2.25em;
+        .image {
+          img {
+            width: 100%;
+          }
+        }
       }
     }
   }

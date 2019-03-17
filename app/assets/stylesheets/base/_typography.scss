@@ -1,9 +1,17 @@
 h1, h2, h3, h4, h5 {
   font-family: 'Dunbar Tall';
+  margin: 0;
 }
 
 h3 {
   line-height: 36px;
+}
+
+@media screen and (max-width: 768px) {
+  h3 {
+    font-size: 18px;
+    line-height: 24px;
+  }
 }
 
 h5 {
