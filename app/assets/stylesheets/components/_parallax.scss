@@ -1,0 +1,22 @@
+.parallax {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .simpleParallax {
+    width: 100% !important;
+  }
+  
+  img {
+    width: 100%;
+  } 
+
+  .title {
+    padding: .5rem .75rem;
+    position: absolute;
+
+    border: 3px solid $color-white;
+    color: $color-white;
+  }
+}
