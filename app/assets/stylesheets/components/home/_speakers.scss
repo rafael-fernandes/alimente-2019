@@ -1,0 +1,82 @@
+section.speakers {
+  padding-top: 5em;
+  padding-bottom: 5em;
+
+  .speaker {
+    width: 230px;
+    height: 230px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    background-color: $color-cyan;
+    border-radius: 100%;
+
+    &:hover {
+      cursor: pointer;
+      background-color: $color-orange;
+
+      .name {
+        background-color: $color-orange;
+      }
+    }
+
+    .name {
+      padding: .5rem;
+      position: absolute;
+      bottom: 0;
+
+      background-color: $color-yellow;
+      
+      font-size: 20px;
+      font-family: 'Dunbar Tall';
+      color: $color-white;
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  section.speakers {
+    padding-top: 2.5em;
+
+    .speaker {
+      width: 130px;
+      height: 130px;
+      margin-bottom: 2em;
+
+      img {
+        width: 130px;
+        height: 130px;
+      }
+
+      .name {
+        padding: .25rem;
+        font-size: 16px;
+        bottom: -.25em;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 768px) {
+  section.speakers {
+    padding-top: 2.5em;
+
+    .speaker {
+      width: 100%;
+      height: auto;
+      margin-bottom: 2.5em;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+
+      .name {
+        padding: .25rem .5rem;
+        font-size: 16px;
+        bottom: -.25em;
+      }
+    }
+  }
+}

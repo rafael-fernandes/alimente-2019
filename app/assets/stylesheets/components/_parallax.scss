@@ -4,6 +4,10 @@
   align-items: center;
   justify-content: center;
 
+  .d-md-block, .d-block {
+    width: 100%;
+  }
+  
   .simpleParallax {
     width: 100% !important;
   }
@@ -13,7 +17,7 @@
   } 
 
   .title {
-    padding: .5rem .75rem;
+    padding: .5rem 1.25rem;
     position: absolute;
 
     border: 3px solid $color-white;
