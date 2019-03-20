@@ -1,0 +1,106 @@
+section.tickets {
+  padding: 5em 0;
+  position: relative;
+  background-color: $color-yellow;
+
+  .bg-ticket-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .bg-ticket-bottom {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  .title-wrapper {
+    width: 700px;
+    color: $color-white;
+
+    .title {
+      padding: .5rem 1.25rem;
+      border: 3px solid $color-white;
+    }
+
+    .lot {
+      margin-top: -.25em;
+      padding: 1.25rem;
+      background-color: $color-cyan;
+      font-family: 'Dunbar Tall';
+      font-size: 42px;
+    }
+  }
+
+  .container {
+    padding-top: 5em;
+  }
+
+  .ticket-type {
+    .title {
+      width: 100%;
+      padding: 1.5rem 0;
+
+      font-family: 'Dunbar Tall';
+      font-size: 42px;
+      color: $color-green;
+      text-align: center;
+
+      border: 3px solid $color-green;
+    }
+
+    .ticket {
+      margin-top: .5em;
+      padding: 2em 1em 1.5em; 
+
+      background: linear-gradient(#48cf9b 0%, #41bb8d 100%);
+      text-align: center;
+      font-family: 'Dunbar Tall';
+
+      .price {
+        font-size: 45px;
+        font-weight: 700;
+        color: $color-white;
+      }
+
+      .button {
+        margin-top: 1.25em;
+        font-size: 26px;
+        color: $color-white;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  section.tickets {
+    padding: 2.5em 0;
+
+    .title-wrapper {
+      padding: 0 1em;
+
+      .lot {
+        padding: .5rem;
+        font-size: 20px;
+      }
+    }
+
+    .container {
+      padding-top: 2em;
+    }
+    
+    .container .row {
+      .col-md-4:nth-child(2) {
+        margin: 2em 0;
+      }
+    }
+
+    .ticket-type {
+      .title {
+        padding: 1rem 0;
+        font-size: 30px;
+      }
+    }
+  }
+}

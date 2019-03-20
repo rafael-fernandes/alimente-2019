@@ -5,7 +5,8 @@
  @import 'ambience/colors';
 
 $theme-colors: (
-  success: $color-green
+  success: $color-green,
+  danger: $color-yellow
 ) !default;
 
 @import 'bootstrap';

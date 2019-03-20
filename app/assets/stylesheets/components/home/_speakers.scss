@@ -38,6 +38,7 @@ section.speakers {
 @media screen and (max-width: 375px) {
   section.speakers {
     padding-top: 2.5em;
+    padding-bottom: 2em;
 
     .speaker {
       width: 130px;
@@ -61,6 +62,7 @@ section.speakers {
 @media screen and (min-width: 375px) and (max-width: 768px) {
   section.speakers {
     padding-top: 2.5em;
+    padding-bottom: 2em;
 
     .speaker {
       width: 100%;
