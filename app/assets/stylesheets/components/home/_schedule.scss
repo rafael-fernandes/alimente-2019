@@ -1,0 +1,49 @@
+section.schedule {
+  padding: 2em 0;
+
+  .day-of-week {
+    padding: .75rem 0;
+    color: $color-green;
+    text-align: center;
+    border: 2px solid $color-green;
+
+    &.-active {
+      color: $color-orange;
+      border-color: $color-orange;
+    }
+  }
+
+  .lectures {
+    padding-top: 3em;
+  }
+
+  .lecture {
+    padding: 1.5em 1em .5em;
+    margin-bottom: 2.5em;
+    position: relative;
+    color: $color-white;
+    background-color: $color-green;
+
+    .time {
+      padding: .25rem .5rem;
+      position: absolute;
+      top: -1rem;
+      display: inline-block;
+      background-color: $color-yellow;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  section.schedule {
+    .day-of-week {
+      h2 {
+        font-size: 16px;
+      }
+    }
+  }
+}
