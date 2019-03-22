@@ -1,5 +1,5 @@
 section.schedule {
-  padding: 2em 0;
+  padding: 2.5em 0 3.5em;
 
   .day-of-week {
     padding: .75rem 0;
@@ -40,6 +40,8 @@ section.schedule {
 
 @media screen and (max-width: 768px) {
   section.schedule {
+    padding-top: 2em;
+    
     .day-of-week {
       h2 {
         font-size: 16px;
