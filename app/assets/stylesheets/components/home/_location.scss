@@ -1,0 +1,93 @@
+section.location {
+  padding: 2em 0;
+  position: relative;
+  background-color: $color-green;
+  font-family: 'Dunbar Tall';
+  font-weight: 500;
+  color: $color-white;
+
+  .days {
+    font-size: 70px;
+    line-height: 70px;
+  }
+
+  .month {
+    font-size: 50px;
+    line-height: 55px;
+  }
+
+  .local {
+    margin-top: 3rem;
+    padding: .5rem .75rem;
+    display: inline-block;
+    font-size: 50px;
+    line-height: 65px;
+    background-color: $color-yellow;
+  }
+
+  .state {
+    padding-top: .5rem;
+    font-size: 50px;
+    line-height: 65px;   
+  }
+
+  .map {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    iframe {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  section.location {
+    padding-bottom: 0;
+
+    .days {
+      text-align: center;
+      font-size: 50px;
+      line-height: 50px;
+    }
+
+    .month {
+      text-align: center;
+      font-size: 37px;
+      line-height: 42px;
+    }
+
+    .local-and-state {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .local {
+      font-size: 32px;
+      line-height: 35px;
+    }
+
+    .state {
+      padding-top: .5rem;
+      padding-bottom: 2rem;
+      font-size: 26px;
+      line-height: 32px;
+    }
+
+    .map {
+      width: 100%;
+      position: relative;
+
+      iframe {
+        height: 300px;
+        display: block;
+      }
+    }    
+  }
+}
