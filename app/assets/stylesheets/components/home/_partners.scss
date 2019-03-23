@@ -37,12 +37,110 @@ section.partners {
   }
 }
 
+section.become-a-partner {
+  padding: 4em 0 10em;
+  position: relative;
+  background-color: #FDCD20;
+  
+  .bg-bottom {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+
+  a {
+    color: $color-white;
+    text-decoration: none;
+
+    &:hover {
+      color: $color-orange;
+    }
+  }
+
+  .exhibitor, .sponsor {
+    height: 190px;
+    border: 3px solid $color-white;
+    text-align: center;
+    font-family: 'Dunbar Tall';
+
+    &:hover {
+      border-color: $color-orange;
+    }
+  }
+
+  .exhibitor {
+    .first-word {
+      font-size: 65px;
+      line-height: 65px;
+    }
+    
+    .second-word {
+      font-size: 47px;
+      line-height: 55px;
+    }
+  }
+
+  .sponsor {
+    .first-word {
+      font-size: 65px;
+      line-height: 65px;
+    }
+    
+    .second-word {
+      font-size: 32px;
+      line-height: 45px;
+    }
+  }
+}
+
 @media screen and (min-width: 375px) and (max-width: 768px) {
   section.partners {
     .partners-list {
       .partner {
         width: 45%;
         padding: 1.5em 1em;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  section.become-a-partner {
+    padding: 3em 0;
+
+    .col-md-4 {
+      display: flex;
+      justify-content: center;
+    }
+
+    .exhibitor, .sponsor {
+      width: 280px;
+      height: 140px;
+    }
+
+    .exhibitor {
+      .first-word {
+        font-size: 50px;
+        line-height: 50px;
+      }
+      
+      .second-word {
+        font-size: 37px;
+        line-height: 40px;
+      }
+    }
+
+    .sponsor {
+      margin-top: 1.5em;
+
+      .first-word {
+        font-size: 50px;
+        line-height: 50px;
+      }
+      
+      .second-word {
+        font-size: 32px;
+        line-height: 45px;
       }
     }
   }
