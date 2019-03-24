@@ -16,4 +16,15 @@
 //= require turbolinks
 //= require popper
 //= require bootstrap
+//= require slippry.min
 //= require_tree .
+
+// $(document).on('turbolinks:load', function () {
+//   $('#slippry-web').slippry({
+//     pager: false
+//   })
+
+//   $('#slippry-mobile').slippry({
+//     pager: false
+//   })
+// });

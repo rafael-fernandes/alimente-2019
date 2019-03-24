@@ -1,0 +1,20 @@
+.app-navbar {
+  height: 95px;
+  background-color: rgba($color-white, 0.3);
+
+  .nav-link {
+    margin-left: 1em;
+    font-family: 'Dunbar Tall';
+    font-size: 16px;
+    color: $color-white !important;
+
+    &:hover { 
+      color: $color-yellow !important;
+    }
+  }
+
+  .btn {
+    color: $color-white;
+    margin-left: 1em;
+  }
+}
