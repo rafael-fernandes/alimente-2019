@@ -1,0 +1,29 @@
+.carousel-item {
+  position: relative;
+
+  .content {
+    position: absolute;
+  }
+}
+
+.carousel-indicators {
+  margin-left: 0;
+  right: initial;
+  left: .65em;
+  bottom: 12em;
+
+  li {
+    width: 12px;
+    height: 12px;
+    margin-left: 5px;
+    margin-right: 5px;
+
+    border-radius: 100%;
+    background: none !important;
+    border: 1px solid $color-white;
+
+    &.active {
+      background-color: $color-white !important;
+    }
+  }
+}

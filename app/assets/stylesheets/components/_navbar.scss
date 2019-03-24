@@ -2,6 +2,8 @@
   height: 95px;
   background-color: rgba($color-white, 0.3);
 
+  transition: all .3s;
+
   .nav-link {
     margin-left: 1em;
     font-family: 'Dunbar Tall';
@@ -16,5 +18,17 @@
   .btn {
     color: $color-white;
     margin-left: 1em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .app-navbar {
+    height: 65px;
+
+    .navbar-brand {
+      img {
+        height: 40px;
+      }
+    }
   }
 }

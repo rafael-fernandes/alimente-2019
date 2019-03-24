@@ -16,15 +16,15 @@
 //= require turbolinks
 //= require popper
 //= require bootstrap
-//= require slippry.min
 //= require_tree .
 
-// $(document).on('turbolinks:load', function () {
-//   $('#slippry-web').slippry({
-//     pager: false
-//   })
-
-//   $('#slippry-mobile').slippry({
-//     pager: false
-//   })
-// });
+$(document).on('turbolinks:load', function () {
+  $(window).scroll(function () {
+    var scroll = $(window).scrollTop();
+    if (scroll < 75) {
+      $('.fixed-top').css('background', 'rgba(255, 255, 255, 0.3)');
+    } else {
+      $('.fixed-top').css('background', '#41BB8D');
+    }
+  });
+});
