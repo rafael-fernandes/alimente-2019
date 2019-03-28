@@ -2,7 +2,21 @@ section.about {
   padding: 4em 0;
 
   > .container > .title {
-    font-weight: 400;
+    font-family: 'Dunbar Tall';
+    font-size: 36px;
+    line-height: 46px;
+    color: $color-green;
+
+    strong {
+      font-weight: bold;
+    }
+  }
+
+  .sub-title {
+    padding: 2em 0 1.5em;
+
+    font-family: 'Dunbar Tall';
+    font-size: 20px;
     color: $color-green;
   }
 
@@ -15,40 +29,25 @@ section.about {
     }
   }
 
-  .content-list {
+  .video {
     padding-top: 2.25em;
-
-    .content-item {
-      position: relative;
-
-      .image {
-        width: 100%;
-        height: auto;
-        position: relative;
-      }
-
-      .title {
-        padding: .5rem;
-        position: absolute;
-        bottom: -1em;
-
-        background-color: $color-yellow;
-        color: $color-white;
-
-        font-family: 'Dunbar Tall';
-        font-weight: 500;
-      }
-
-      .description {
-        padding-top: 2.5em;
-      }
-    }
   }
 }
 
 @media screen and (max-width: 768px) {
   section.about {
-    padding: 2em 0 0;
+    padding: 2em 0;
+
+    > .container > .title {
+      font-family: 'Dunbar Tall';
+      font-size: 18px;
+      line-height: 24px;
+    }
+
+    .sub-title {
+      padding: 0 0 1em;
+      font-size: 16px;
+    }
 
     .content {
       padding-top: 2.25em;
@@ -67,15 +66,13 @@ section.about {
       }
     }
 
-    .content-list {
-      .content-item {
-        margin-bottom: 2.25em;
-
-        .image {
-          img {
-            width: 100%;
-          }
-        }
+    .video {
+      iframe {
+        height: 200px;
+      }
+      
+      .text {
+        padding-top: 1em;
       }
     }
   }
