@@ -6,8 +6,8 @@
  
  $theme-colors: (
    success: $color-green,
-   warning: $color-orange,
-   danger: $color-yellow
+   warning: $color-yellow,
+   danger: $color-orange
    ) !default;
    
 @import 'font-awesome';

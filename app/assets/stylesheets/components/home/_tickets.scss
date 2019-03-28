@@ -51,22 +51,50 @@ section.tickets {
     }
 
     .ticket {
-      margin-top: .5em;
-      padding: 2em 1em 1.5em; 
-
-      background: linear-gradient(#48cf9b 0%, #41bb8d 100%);
-      text-align: center;
+      padding: 1em;
+      margin-top: .75em;
+      
       font-family: 'Dunbar Tall';
 
+      border: 2px solid $color-white;
+
+      .lot-type {
+        color: $color-white;
+        padding-bottom: .5em;
+      }
+
       .price {
-        font-size: 45px;
-        font-weight: 700;
+        font-size: 42px;
+        line-height: 42px;
+        font-weight: 400;
         color: $color-white;
       }
 
       .button {
+        display: none;
+      }
+    }
+
+    .ticket--active {
+      padding: 1.5em 1em;
+
+      border: none;
+      background: linear-gradient(#48cf9b 0%, #41bb8d 100%);
+
+      text-align: center;
+
+      .price {
+        font-weight: 700;
+      }
+
+      .lot-type {
+        padding-bottom: 1.5em;
+      }
+
+      .button {
+        display: inline-block;
         margin-top: 1.25em;
-        font-size: 26px;
+        font-size: 20px;
         color: $color-white;
       }
     }
