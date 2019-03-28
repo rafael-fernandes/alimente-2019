@@ -1,6 +1,26 @@
 section.speakers {
-  padding-top: 5em;
+  padding-top: 4em;
   padding-bottom: 2.5em;
+
+  .international, .national {
+    .title {
+      padding: 1rem 1.25rem;
+      display: inline-block;
+      font-family: 'Dunbar Tall';
+      font-size: 42px;
+      line-height: 42px;
+      color: $color-orange;
+      border: 3px solid $color-orange;
+    }
+  }
+
+  .international-speakers {
+    padding: 3em 0 4em;
+  }
+  
+  .national-speakers {
+    padding-top: 3em;
+  }
 
   .speaker {
     width: 230px;
@@ -32,6 +52,37 @@ section.speakers {
       font-size: 20px;
       font-family: 'Dunbar Tall';
       color: $color-white;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  section.speakers {
+    .international, .national {
+      .title {
+        padding: .5rem .5rem;
+        display: inline-block;
+        font-family: 'Dunbar Tall';
+        font-size: 20px;
+        line-height: 20px;
+        color: $color-orange;
+        border: 3px solid $color-orange;
+      }
+    }
+
+    .international-speakers--mobile {
+      .international-speaker--mobile {
+        padding: 2em 0 1.5em;
+      }
+    }
+
+    .buttons {
+      padding-bottom: 3em;
+
+      button {
+        border-radius: 50%;
+        font-size: 12px;
+      }
     }
   }
 }

@@ -1,18 +1,81 @@
 <div class="parallax">
   <div class="d-none d-md-block">
-    <%= image_tag 'bg-parallax@2x.png', class: 'parallax-image' %>
+    <%= image_tag 'bg-parallax-speakers@2x.png', class: 'parallax-image' %>
   </div>
 
   <div class="d-block d-md-none">
-    <%= image_tag 'bg-parallax-mobile@2x.png', class: 'parallax-image' %>
+    <%= image_tag 'bg-parallax-speakers-mobile@2x.png', class: 'parallax-image' %>
   </div>
 
   <h1 class="title">PALESTRANTES</h1>
 </div>
 
 <section class="speakers">
+  <div class="international">
+    <div class="d-flex justify-content-center">
+      <div class="title">
+        PALESTRANTES INTERNACIONAIS
+      </div>
+    </div>
+  </div>
+
+  <div class="container d-flex justify-content-center">
+    <div class="d-none d-md-block">
+      <div class="row international-speakers">
+        <div class="col-md-4 col-6 col-sm-6 d-flex justify-content-center">
+          <div class="speaker">
+            <%= image_tag 'erik-neves@2x.png' %>
+            <div class="name">DR. ERIK NEVES</div>
+          </div>
+        </div>
+        
+        <div class="col-md-4 col-6 col-sm-6 d-flex justify-content-center">
+          <div class="speaker">
+            <%= image_tag 'jose-souto@2x.png' %>
+            <div class="name">JOSÉ SOUTO</div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-6 col-sm-6 d-flex justify-content-center">
+          <div class="speaker">
+            <%= image_tag 'jose-neto@2x.png' %>
+            <div class="name">JOSÉ NETO</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="international-speakers--mobile d-block d-md-none siema">
+      <div class="international-speaker--mobile text-center">
+        <%= image_tag 'palestrantes/internacional-1@2x.png' %>
+      </div>
+    </div>
+  </div>
+
+  <div class="buttons d-block d-md-none">
+    <div class="d-flex justify-content-center">
+      <button class="btn btn-outline-warning siema-prev">
+        <%= fa_icon 'angle-left' %>
+      </button>
+
+      <span>&emsp;</span>
+
+      <button class="btn btn-outline-warning siema-next">
+        <%= fa_icon 'angle-right' %>
+      </button>
+    </div>
+  </div>
+  
+  <div class="national">
+    <div class="d-flex justify-content-center">
+      <div class="title">
+        PALESTRANTES NACIONAIS
+      </div>
+    </div>
+  </div>
+
   <div class="container">
-    <div class="row">
+    <div class="row national-speakers">
       <div class="col-md-3 col-6 col-sm-6 d-flex justify-content-center">
         <div class="speaker">
           <%= image_tag 'erik-neves@2x.png' %>

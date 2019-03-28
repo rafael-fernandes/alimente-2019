@@ -1,14 +1,16 @@
 /*
  *= require_self
  */
-
-@import 'ambience/colors';
-
-$theme-colors: (
-  success: $color-green,
-  danger: $color-yellow
-) !default;
-
+ 
+ @import 'ambience/colors';
+ 
+ $theme-colors: (
+   success: $color-green,
+   warning: $color-orange,
+   danger: $color-yellow
+   ) !default;
+   
+@import 'font-awesome';
 @import 'bootstrap';
 
 @import 'ambience/fonts';
