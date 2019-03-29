@@ -33,4 +33,16 @@ $(document).on('turbolinks:load', function() {
   $('.minutes .number').countdown('2019/11/16 08:00:00', function (event) {
     $(this).html(event.strftime('%M'));
   });
+
+  $('.timer .hours').countdown('2019/03/31 00:00:00', function (event) {
+    $(this).html(event.strftime('%H'));
+  });
+
+  $('.timer .minutes').countdown('2019/03/31 00:00:00', function (event) {
+    $(this).html(event.strftime('%M'));
+  });
+
+  $('.timer .seconds').countdown('2019/03/31 00:00:00', function (event) {
+    $(this).html(event.strftime('%S'));
+  });
 });

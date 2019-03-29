@@ -35,6 +35,68 @@ section.tickets {
 
   .container {
     padding-top: 5em;
+    position: relative;
+    z-index: 1;
+  }
+
+  .promotional-banner {
+    width: 100%;
+    padding: 2em;
+    margin-bottom: 2em;
+
+    color: $color-white;
+    font-family: 'Dunbar Tall';
+
+    background: linear-gradient(#48cf9b 0%, #41bb8d 100%);
+
+    .tickets-info {
+      > .title {
+        padding: .75rem 1rem;
+        margin-bottom: 1.5rem;
+        display: inline-block;
+
+        font-size: 42px;
+        line-height: 42px;
+        border: 2px solid $color-white;
+      }
+
+      .ticket {
+        display: inline-block;
+
+        .price {
+          font-size: 42px;
+          line-height: 54px;
+        }
+
+        &:last-child {
+          margin-left: 2em;
+        }
+      }
+    }
+
+    .timer-wrapper {
+      .title {
+        padding-bottom: 1em;
+      }
+
+      .timer {
+        width: 330px;
+        padding: 1rem;
+        font-size: 72px;
+        line-height: 72px;
+        text-align: center;
+        background-color: $color-yellow;
+      }
+    }
+
+    .disclaimer {
+      padding-top: 1em;
+      font-family: 'Sofia Pro';
+
+      .btn, a {
+        color: $color-white;
+      }
+    }
   }
 
   .ticket-type {
@@ -124,10 +186,88 @@ section.tickets {
       }
     }
 
+    .promotional-banner {
+      padding: 1em;
+
+      .d-flex {
+        flex-wrap: wrap;
+      }
+
+      .tickets-info {
+        width: 100%;
+
+        .title {
+          padding: 0.25rem 0;
+          display: block;
+
+          font-size: 24px;
+          text-align: center;
+        }
+
+        .ticket {
+          .price {
+            font-size: 26px;
+            line-height: 30px;
+          }
+
+          .ticket-type {
+            font-size: 12px;
+          }
+
+          &:last-child {
+            margin-left: 1.2em;
+          }
+        }
+      }
+
+      .timer-wrapper {
+        padding-top: 1.5em;
+        margin-left: 0 !important;
+
+        .timer {
+          width: 200px;
+
+          font-size: 42px;
+          line-height: 54px;
+        }
+      }
+
+      .disclaimer {
+        .btn {
+          font-size: 15px;
+        }
+      }
+    }
+
     .ticket-type {
       .title {
         padding: 1rem 0;
         font-size: 30px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 768px) {
+  section.tickets {
+    .promotional-banner {
+      .tickets-info {
+        .tickets {
+          .ticket {
+            .price {
+              font-size: 30px;
+              line-height: 36px;
+            }
+
+            .ticket-type {
+              font-size: 16px;
+            }
+
+            &:last-child {
+              margin-left: 2em;
+            }
+          }
+        }
       }
     }
   }
