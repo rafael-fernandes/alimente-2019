@@ -4,6 +4,9 @@ body {
   font-size: 18px;
   line-height: 26px;
   color: $color-dark-grey;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
 
 @media screen and (max-width: 768px) {
@@ -18,4 +21,8 @@ break {
   width: 0px; 
   height: 0px; 
   overflow: hidden;
+}
+
+main {
+  flex: 1;
 }

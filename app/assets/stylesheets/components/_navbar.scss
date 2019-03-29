@@ -1,8 +1,6 @@
 .app-navbar {
   height: 95px;
-  background-color: rgba($color-white, 0.3);
-
-  transition: all .3s;
+  background-color: $color-green;
 
   .nav-link {
     margin-left: 1em;
@@ -23,12 +21,24 @@
 
 @media screen and (max-width: 768px) {
   .app-navbar {
-    height: 65px;
+    padding: 0;
+    height: initial;
 
     .navbar-brand {
+      padding: .75rem 0 .75rem 1rem;
+
       img {
         height: 40px;
       }
+    }
+
+    .navbar-toggler {
+      margin-right: 1rem;
+    }
+
+    .navbar-collapse {
+      padding-bottom: 1em;
+      background-color: $color-green;
     }
   }
 }
