@@ -1,0 +1,55 @@
+footer {
+  padding: 2em 0 1.5em;
+  background-color: $color-yellow;
+  color: $color-brown;
+  
+  .title {
+    font-family: 'Dunbar Tall';
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  .list {
+    padding-top: 1em;
+    padding-left: 0;
+    list-style-type: none;
+
+    .list-item a {
+      color: $color-brown;
+      line-height: 30px;
+      font-size: 18px;
+    }
+  }
+
+  .payment-methods {
+    padding-top: 1em;
+  }
+
+  .social {
+    margin-top: 1em;
+    font-size: 40px;
+    color: $color-brown;
+
+    &:last-child {
+      font-size: 35px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  footer {
+    .title {
+      font-size: 16px;
+    }
+
+    .list {
+      .list-item a {
+        font-size: 16px;
+      }
+    }
+
+    .payment-methods {
+      width: 100%;
+    }
+  }
+}
