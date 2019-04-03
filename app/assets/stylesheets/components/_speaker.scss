@@ -1,0 +1,55 @@
+.speaker-page {
+  overflow-x: hidden;
+  padding-bottom: 6em;
+
+  .header {
+    height: 260px;
+    background-image: image-url('bg-speaker@2x.png');
+    background-size: cover;
+
+    .row {
+      height: 260px;
+    }
+  }
+  
+  .name-wrapper {
+    display: flex;
+  }
+
+  .name {
+    align-self: flex-end;
+    padding-bottom: .75em;
+
+    font-family: 'Dunbar Tall';
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 500;
+    color: $color-white;
+  }
+
+  .photo {
+    width: 275px;
+    height: 275px;
+    margin-top: -6em;
+
+    background-color: $color-cyan;
+    border-radius: 100%;
+  }
+
+  .about {
+    padding-top: 2em;
+
+    .social {
+      padding-top: 2em;
+
+      .media {
+        padding-right: 3em;
+      }
+
+      .link {
+        margin-left: .5em;
+        color: $color-orange;
+      }
+    }
+  }
+}
