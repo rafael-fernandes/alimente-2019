@@ -1,0 +1,50 @@
+.about-project {
+  position: relative;
+
+  .header {
+    height: 260px;
+    background-image: image-url('bg-speaker@2x.png');
+    background-size: cover;
+  }
+  
+  .title {
+    padding-top: 2em;
+    font-family: 'Dunbar Tall';
+    font-size: 36px;
+    font-weight: 500;
+    color: $color-white;
+  }
+
+  .text {
+    padding: 3em 0 8em;
+    max-width: 600px;
+  }
+
+  .bg-about-project {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+.work-with-us {
+  padding-bottom: 4em;
+  background-color: $color-green;
+  color: $color-white;
+
+  .title {
+    padding: 2em 0 1em;
+
+    font-family: 'Dunbar Tall';
+    font-size: 36px;
+    font-weight: 400;
+  }
+
+  .text {
+    padding-right: 2em;
+  }
+
+  form {
+    padding-top: 1em;
+  }
+}
