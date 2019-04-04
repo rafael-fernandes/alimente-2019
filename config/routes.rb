@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   
   root to: 'static_pages#home'
 
-  get 'palestrantes/:slug' => 'speakers#show'
-
   get 'sobre-o-projeto' => 'static_pages#about'
+  get 'politica-de-reembolso' => 'static_pages#refunds'
+  get 'palestrantes/:slug' => 'speakers#show'
 end

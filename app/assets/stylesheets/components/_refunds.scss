@@ -1,4 +1,4 @@
-.about-project {
+.refunds {
   position: relative;
 
   .header {
@@ -20,60 +20,32 @@
     max-width: 600px;
   }
 
-  .bg-about-project {
+  .bg-refunds {
     position: absolute;
     right: 0;
     bottom: 0;
   }
 }
 
-.work-with-us {
-  padding-bottom: 4em;
-  background-color: $color-green;
-  color: $color-white;
-
-  .title {
-    padding: 2em 0 1em;
-
-    font-family: 'Dunbar Tall';
-    font-size: 36px;
-    font-weight: 400;
-  }
-
-  .text {
-    padding-right: 2em;
-  }
-
-  form {
-    padding-top: 1em;
-  }
-}
-
 @media screen and (max-width: 768px) {
-  .about-project {
+  .refunds {
     .header {
-      height: 200px;
+      height: 250px;
       background-image: image-url('bg-speaker-mobile@2x.png');
     }
 
     .title {
-      padding-top: 1.5em;
-      line-height: 42px;
+      padding-top: 2em;
+      font-size: 26px;
+      line-height: 32px;
     }
 
     .text {
       padding-bottom: 3em;
     }
 
-    .bg-about-project {
+    .bg-refunds {
       display: none;
-    }
-  }
-
-  .work-with-us {
-    .title {
-      padding: 1em 0 .5em;
-      line-height: 42px;
     }
   }
 }
