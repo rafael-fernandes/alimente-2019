@@ -7,5 +7,7 @@ Rails.application.routes.draw do
 
   get 'sobre-o-projeto' => 'static_pages#about'
   get 'politica-de-reembolso' => 'static_pages#refunds'
+  get 'perguntas-frequentes' => 'static_pages#faq'
+  
   get 'palestrantes/:slug' => 'speakers#show'
 end
