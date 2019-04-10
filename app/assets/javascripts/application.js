@@ -16,7 +16,6 @@
 //= require turbolinks
 //= require popper
 //= require bootstrap
-//= require siema.min
 //= require_tree .
 
 $(document).on('turbolinks:load', function () {
@@ -28,17 +27,4 @@ $(document).on('turbolinks:load', function () {
   //     $('.fixed-top').css('background', '#41BB8D');
   //   }
   // });
-
-  const mySiema = new Siema({
-    selector: '.siema',
-    perPage: 1
-  });
-
-  $('.siema-prev').on('click', function() {
-    mySiema.prev();
-  });
-
-  $('.siema-next').on('click', function() {
-    mySiema.next();
-  })
 });

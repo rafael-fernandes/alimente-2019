@@ -72,6 +72,12 @@ section.tickets {
           margin-left: 2em;
         }
       }
+
+      .benefits {
+        padding-top: 1em;
+        font-family: 'Sofia Pro' !important;
+        font-weight: 300;
+      }
     }
 
     .timer-wrapper {
@@ -110,6 +116,30 @@ section.tickets {
       text-align: center;
 
       border: 3px solid $color-green;
+
+      &.-adjust {
+        font-size: 32px;
+      }
+    }
+
+    .sub-title {
+      width: 100%;
+      margin-top: .5em;
+      padding: 1rem 0;
+
+      font-family: 'Dunbar Tall';
+      font-size: 26px;
+      color: $color-green;
+      text-align: center;
+
+      border: 3px solid $color-green;
+    }
+
+    .benefits {
+      padding-top: 1em;
+      font-size: 16px;
+      line-height: 22px;
+      color: $color-white;
     }
 
     .ticket {
@@ -243,6 +273,15 @@ section.tickets {
       .title {
         padding: 1rem 0;
         font-size: 30px;
+
+        &.-adjust {
+          font-size: 25px;
+        }
+      }
+
+      .sub-title {
+        padding: .75rem 0;
+        font-size: 20px;
       }
     }
   }
