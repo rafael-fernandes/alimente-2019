@@ -19,12 +19,14 @@
 //= require_tree .
 
 $(document).on('turbolinks:load', function () {
-  // $(window).scroll(function () {
-  //   var scroll = $(window).scrollTop();
-  //   if (scroll < 75) {
-  //     $('.fixed-top').css('background', 'rgba(255, 255, 255, 0.3)');
-  //   } else {
-  //     $('.fixed-top').css('background', '#41BB8D');
-  //   }
-  // });
+  $(window).scroll(function () {
+    var scroll = $(window).scrollTop();
+    if (scroll < 75) {
+      $('.app-navbar').css('background', 'rgba(255, 255, 255, 0.3)');
+      $('.project-navbar').css('background', 'rgba(255, 255, 255, 0.3)');
+    } else {
+      $('.app-navbar').css('background', '#369C75');
+      $('.project-navbar').css('background', '#D16908');
+    }
+  });
 });
