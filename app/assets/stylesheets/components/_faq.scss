@@ -18,16 +18,8 @@
   .questions {
     padding-top: 2em;
 
-    .row {
+    .question-item {
       padding-bottom: 1.5em;
-
-      .col-md-6 {
-        padding-bottom: 1.5em;
-
-        &:last-child {
-          padding-bottom: 0;
-        }
-      }
     }
   }
 
@@ -38,6 +30,10 @@
     font-size: 20px;
     color: $color-orange;
     text-transform: uppercase;
+  }
+
+  .answer {
+    padding-right: 2em;
   }
 }
 
