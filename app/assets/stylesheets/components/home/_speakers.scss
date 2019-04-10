@@ -16,6 +16,7 @@ section.speakers {
 
   .international {
     padding: 4em 0 0;
+    position: relative;
     background-color: $color-orange;
 
     .title {
@@ -98,6 +99,39 @@ section.speakers {
 
 @media screen and (max-width: 768px) {
   section.speakers {
+    .international {
+      padding: 2em 0 15em;
+
+      .title {
+        color: $color-white;
+        border: 3px solid $color-white;
+      }
+
+      .international-speaker {
+        .photo {
+          width: 230px;
+          transform: scaleX(-1);
+        }
+
+        .info {
+          padding: 0;
+        }
+      }
+    }
+
+    .national {
+      padding: 2em 0;
+
+      .title {
+        color: $color-orange;
+        border: 3px solid $color-orange;
+      }
+    }
+
+    .national-speakers {
+      padding-top: 1em;
+    }
+
     .international, .national {
       .title {
         padding: .5rem .5rem;
@@ -105,14 +139,12 @@ section.speakers {
         font-family: 'Dunbar Tall';
         font-size: 20px;
         line-height: 20px;
-        color: $color-orange;
-        border: 3px solid $color-orange;
       }
-    }
 
-    .international-speakers--mobile {
-      .international-speaker--mobile {
-        padding: 2em 0 1.5em;
+      .photo {
+        position: absolute;
+        right: 0;
+        bottom: 0;
       }
     }
 
@@ -137,8 +169,13 @@ section.speakers {
 
 @media screen and (max-width: 375px) {
   section.speakers {
-    padding-top: 2.5em;
     padding-bottom: 2em;
+
+    .international {
+      .title {
+        font-size: 18px;
+      }
+    }
 
     .speaker {
       width: 130px;
@@ -161,7 +198,6 @@ section.speakers {
 
 @media screen and (min-width: 375px) and (max-width: 768px) {
   section.speakers {
-    padding-top: 2.5em;
     padding-bottom: 2em;
 
     .speaker {
