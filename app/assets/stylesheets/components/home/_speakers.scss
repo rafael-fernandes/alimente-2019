@@ -1,5 +1,4 @@
 section.speakers {
-  padding-top: 4em;
   padding-bottom: 2.5em;
 
   .international, .national {
@@ -15,10 +14,50 @@ section.speakers {
     }
   }
 
-  .international-speakers {
-    padding: 3em 0 4em;
+  .international {
+    padding: 4em 0 0;
+    background-color: $color-orange;
+
+    .title {
+      color: $color-white;
+      border-color: $color-white;
+    }
+
+    .international-speaker {
+      padding-top: 3em;
+
+      .info {
+        padding-top: 2em;
+        padding-left: 2em;
+        color: $color-white;
+
+        .name {
+          font-family: 'Dunbar Tall';
+          font-weight: 500;
+          font-size: 28px;
+        }
+
+        .about {
+          padding-top: 1.5em;
+          width: 90%;
+        }
+
+        .social {
+          .media {
+            .link {
+              margin-left: .5em;
+              color: $color-white;
+            }
+          }
+        }
+      }
+    }
   }
-  
+
+  .national {
+    padding-top: 4em;
+  }
+
   .national-speakers {
     padding-top: 3em;
   }
