@@ -50,73 +50,16 @@
 
   <div class="container">
     <div class="row national-speakers">
-      <div class="col-md-3 col-6 col-sm-6 d-flex justify-content-center">
-        <div class="speaker">
-          <%= image_tag 'erik-neves@2x.png' %>
-          <div class="name">DR. ERIK NEVES</div>
+      <% @speakers.each do |speaker| %>
+        <div class="col-md-3 col-6 col-sm-6 d-flex justify-content-center">
+          <a href="/palestrantes/<%= speaker.slug %>">
+            <div class="speaker">
+              <%= image_tag speaker.image %>
+              <div class="name <%= '-adjust-mobile' if speaker.name.size > 14 %>"><%= speaker.name %></div>
+            </div>
+          </a>
         </div>
-      </div>
-      
-      <div class="col-md-3 col-6 col-sm-6 d-flex justify-content-center">
-        <div class="speaker">
-          <%= image_tag 'jose-souto@2x.png' %>
-          <div class="name">JOSÉ SOUTO</div>
-        </div>
-      </div>
-
-      <div class="col-md-3 col-6 col-sm-6 d-flex justify-content-center">
-        <div class="speaker">
-          <%= image_tag 'jose-neto@2x.png' %>
-          <div class="name">JOSÉ NETO</div>
-        </div>
-      </div>
-
-      <div class="col-md-3 col-6 col-sm-6 d-flex justify-content-center">
-        <div class="speaker">
-          <%= image_tag 'rafael-lund@2x.png' %>
-          <div class="name">RAFAEL LUND</div>
-        </div>
-      </div>
-
-      <div class="col-md-3 col-6 col-sm-6 d-flex justify-content-center">
-        <div class="speaker">
-          <%= image_tag 'leticia-vasconcelos@2x.png' %>
-
-          <div class="name -adjust-mobile">LETÍCIA VASCONCELOS</div>
-        </div>
-      </div>
-
-      <div class="col-md-3 col-6 col-sm-6 d-flex justify-content-center">
-        <div class="speaker">
-          <%= image_tag 'renata-calixto@2x.png' %>
-
-          <div class="name -adjust-mobile">RENATA CALIXTO</div>
-        </div>
-      </div>
-
-      <div class="col-md-3 col-6 col-sm-6 d-flex justify-content-center">
-        <div class="speaker">
-          <%= image_tag 'ana-moreira@2x.png' %>
-
-          <div class="name">ANA MARTHA</div>
-        </div>
-      </div>
-
-      <div class="col-md-3 col-6 col-sm-6 d-flex justify-content-center">
-        <div class="speaker">
-          <%= image_tag 'patricia@2x.png' %>
-
-          <div class="name -adjust-mobile">PATRICIA TASSINARI</div>
-        </div>
-      </div>
-
-      <div class="col-md-3 col-6 col-sm-6 d-flex justify-content-center">
-        <div class="speaker">
-          <%= image_tag 'janaina@2x.png' %>
-
-          <div class="name -adjust-mobile">JANAINA KOENEN</div>
-        </div>
-      </div>
+      <% end %>
     </div>
   </div>
 </section>

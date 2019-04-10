@@ -34,15 +34,15 @@ $(document).on('turbolinks:load', function() {
     $(this).html(event.strftime('%M'));
   });
 
-  $('.timer .hours').countdown('2019/03/31 00:00:00', function (event) {
+  $('.timer .hours').countdown('2019/04/10 20:00:00', function (event) {
     $(this).html(event.strftime('%H'));
   });
 
-  $('.timer .minutes').countdown('2019/03/31 00:00:00', function (event) {
+  $('.timer .minutes').countdown('2019/04/10 20:00:00', function (event) {
     $(this).html(event.strftime('%M'));
   });
 
-  $('.timer .seconds').countdown('2019/03/31 00:00:00', function (event) {
+  $('.timer .seconds').countdown('2019/04/10 20:00:00', function (event) {
     $(this).html(event.strftime('%S'));
   });
 });
