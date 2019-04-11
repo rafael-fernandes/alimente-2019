@@ -20,7 +20,7 @@
 }
 
 @media screen and (max-width: 768px) {
-  .app-navbar {
+  .navbar {
     padding: 0;
     height: initial;
 
@@ -38,7 +38,15 @@
 
     .navbar-collapse {
       padding-bottom: 1em;
-      background-color: $color-green;
+      background-color: #369C75;
+    }
+  }
+
+  .navbar {
+    &.project-navbar {
+      .navbar-collapse {
+        background-color: #D16908;
+      }
     }
   }
 }

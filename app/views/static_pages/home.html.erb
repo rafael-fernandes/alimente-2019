@@ -17,3 +17,10 @@
 <%= render 'static_pages/home/partners' %>
 
 <%= render 'static_pages/home/location' %>
+
+<script>
+  $(document).on('turbolinks:load', function() {
+    var image = document.getElementsByClassName('parallax-image');
+    new simpleParallax(image);
+  });
+</script>
