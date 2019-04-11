@@ -15,7 +15,7 @@ section.speakers {
   }
 
   .international {
-    padding: 4em 0 0;
+    padding: 4em 0 4em;
     position: relative;
     background-color: $color-orange;
 
@@ -25,17 +25,16 @@ section.speakers {
     }
 
     .international-speaker {
-      padding-top: 3em;
+      padding-top: 5em;
 
       .info {
-        padding-top: 2em;
-        padding-left: 2em;
+        padding-left: 4em;
         color: $color-white;
 
         .name {
           font-family: 'Dunbar Tall';
           font-weight: 500;
-          font-size: 28px;
+          font-size: 32px;
         }
 
         .about {
@@ -44,6 +43,8 @@ section.speakers {
         }
 
         .social {
+          padding-top: 2em;
+
           .media {
             .link {
               margin-left: .5em;
@@ -100,7 +101,7 @@ section.speakers {
 @media screen and (max-width: 768px) {
   section.speakers {
     .international {
-      padding: 2em 0 15em;
+      padding: 2em 0 1em;
 
       .title {
         color: $color-white;
@@ -108,13 +109,32 @@ section.speakers {
       }
 
       .international-speaker {
+        padding: 2em 1em;
+        flex-direction: column;
+
         .photo {
           width: 230px;
-          transform: scaleX(-1);
+          margin: 0 auto;
         }
 
         .info {
           padding: 0;
+          padding-top: 2em;
+
+          .name {
+            text-align: center;
+          }
+        }
+      }
+
+      .social {
+        flex-wrap: wrap;
+
+        .media {
+          &:last-child {
+            padding-left: 0 !important;
+            padding-top: 1em;
+          }
         }
       }
     }
@@ -139,12 +159,6 @@ section.speakers {
         font-family: 'Dunbar Tall';
         font-size: 20px;
         line-height: 20px;
-      }
-
-      .photo {
-        position: absolute;
-        right: 0;
-        bottom: 0;
       }
     }
 
