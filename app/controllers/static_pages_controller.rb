@@ -1,6 +1,6 @@
 class StaticPagesController < ApplicationController
   def home
-    @speakers = Speaker.all
+    @speakers = Speaker.all.order(position: :asc)
   end
 
   def about

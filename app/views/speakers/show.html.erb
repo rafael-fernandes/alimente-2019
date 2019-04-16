@@ -26,7 +26,7 @@
       </div>
 
       <div class="col-md-6 about">
-        <%= @speaker.about %>
+        <%= @speaker.about.html_safe %>
 
         <div class="social d-flex">
           <% if @speaker.instagram %>
