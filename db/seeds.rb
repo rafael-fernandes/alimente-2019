@@ -12,8 +12,8 @@ Speaker.create(
   name: 'DR. ERIK NEVES',
   about: "Há 5 anos tratando pacientes com dieta low carb, que acredita firmemente ser a mais confiável diretriz para longevidade, bem-estar e um melhor estilo de vida, além do profundo comprometimento com a medicina, nutre verdadeira paixão por correr descalço, já tendo participado de dois Ironman e uma ultramaratona. Médico da equipe brasileira de tênis de mesa durante a preparação para os Jogos Paralímpicos de 2016, foi convidado para coordenar um futuro curso on-line, em parceria com a Fundação Noakes, destinado a médicos e nutricionistas brasileiros.",
   image: 'erik-neves@2x.png',
-  instagram: 'erik-neves',
-  twitter: 'erik-neves'
+  instagram: 'erikneves',
+  twitter: 'erikneves'
 )
 
 Speaker.create(
@@ -42,7 +42,9 @@ Speaker.create(
 
 Speaker.create(
   name: 'LETICIA VASCONCELOS',
-  about: "",
+  about: "Letícia é licenciada em educação física pela Universidade de Mogi as Cruzes (UMC) e especializada em fisiologia do exercício e pilates. Atua há 6 anos com dor crônica, atuando com reorganização postural e do movimento, condicionamento e reabilitação de pacientes com dores crônicas, lesões musculoesqueléticas, fibromialgia, prevenção de dores, promovendo o retorno do indivíduo às atividades físicas diárias e prática esportiva.",
+  instagram: 'leticiallos',
+  site: 'www.programa7x4.com.br',
   image: 'leticia-vasconcelos@2x.png'
 )
 
@@ -50,7 +52,8 @@ Speaker.create(
   name: 'RENATA CALIXTO',
   about: "Renata Calixto é fisioterapeuta, professora, palestrante e eterna estudante. Celíaca que descobriu a saúde após embarcar no estilo de vida saudável, baseado em comida de verdade. Fez mestrado em Ciências do Exercício e do Esporte (UERJ), é pós-graduada em Fisiologia do Exercício e Treinamento Resistido: na saúde, na doença e no envelhecimento (Faculdade de Medicina da USP),também pós-graduada em Reabilitação e Treinamento (Instituto de Ortopedia e Traumatologia do Hospital das Clínicas USP). Além disso é moderadora no grupo de Facebook Viva Sem Glúten, diretora de comunicação da Associação de Celíacos do Rio de Janeiro (ACELBRA - RJ) e proprietária e administradora do site Vivencie Saúde.",
   image: 'renata-calixto@2x.png',
-  instagram: 're.calixto'
+  instagram: 're.calixto',
+  site: 'www.vivenciesaude.com.br'
 )
 
 Speaker.create(
@@ -62,14 +65,16 @@ Speaker.create(
 
 Speaker.create(
   name: 'PATRICIA TASSINARI',
-  about: "",
+  about: "Patrícia DI Giaimo Tassinari é Médica Vetenária especialista em doenças metabólicas em cães e gatos. Reside e trabalha na região de Stuttgart (Alemanha). Membro da plataforma de cursos voltados à saude Basis Plena como Health Coach e Veterinária.",
   image: 'patricia@2x.png',
-  instagram: 'patritassinari'
+  instagram: 'patritassinari',
+  site: 'www.basisplena.com.br'
 )
 
 Speaker.create(
   name: 'JANAINA KOENEN',
   about: "Endocrinologista, especialista em diabetes, membro titular da Sociedade Brasileira de Endocrinologia e Metabologia da Sociedade Brasileira de Diabetes. Mestre em Inovação Tecnológica e Propriedade Intelectual pela Universidade Federal de Minas Gerais (UFMG). Professora da Pós Graduação em low carb da Universidade Univiçosa. Trabalhou muitos anos com pacientes diabéticos amputados e foi preceptora do ambulatório de Diabetes tipo 1 do Hospital das Clínicas da UFMG. Estudiosa do estilo de vida Paleolítica e das dietas Low carb, Cetogênica e Carnívora. Tem como missão prevenir e tratar a síndrome metabólica através do estilo de vida com ênfase em comida de verdade.",
   image: 'janaina@2x.png',
-  instagram: 'janainaendocrino'
+  instagram: 'janainaendocrino', 
+  site: 'www.janainakoenen.com.br'
 )

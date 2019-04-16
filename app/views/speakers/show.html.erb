@@ -29,7 +29,6 @@
         <%= @speaker.about %>
 
         <div class="social d-flex">
-          
           <% if @speaker.instagram %>
             <div class="media d-flex align-items-center">
               <%= image_tag 'instagram@2x.png' %>
@@ -41,6 +40,13 @@
             <div class="media d-flex align-items-center">
               <%= image_tag 'twitter@2x.png' %>
               <strong><%= link_to @speaker.twitter, "http://twitter.com/#{@speaker.twitter}", target: '_blank', class: 'link' %></strong>
+            </div>
+          <% end %>
+
+          <% if @speaker.site %>
+            <div class="media d-flex align-items-center">
+              <%= image_tag 'site@2x.png' %>
+              <strong><%= link_to @speaker.site, "http://#{@speaker.site}", target: '_blank', class: 'link' %></strong>
             </div>
           <% end %>
         </div>

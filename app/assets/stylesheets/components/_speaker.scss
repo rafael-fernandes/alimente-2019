@@ -40,10 +40,12 @@
     padding-top: 2em;
 
     .social {
+      flex-wrap: wrap;
       padding-top: 2em;
 
       .media {
         padding-right: 3em;
+        padding-top: 1em;
       }
 
       .link {
