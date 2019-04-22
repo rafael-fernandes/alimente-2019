@@ -1,0 +1,132 @@
+.basis-plena {
+  position: relative;
+
+  .header {
+    height: 260px;
+    padding-top: 7em;
+    padding-bottom: 2em;
+
+    background-image: image-url('bg-basis-plena@2x.png');
+    background-size: cover;
+
+    .title {
+      padding: 1rem;
+      font-family: 'Dunbar Tall';
+      font-size: 62px;
+      line-height: 62px;
+      font-weight: 500;
+      color: $color-white;
+      border: 3px solid $color-white;
+    }
+  }
+
+  .devise-box {
+    padding: 4em 0;
+    width: 400px;
+  }
+
+  .videos {
+    padding-top: 3em;
+    padding-bottom: 3em;
+
+    .sub-title {
+      font-size: 22px;
+    }
+
+    table {
+      margin: 2em 0;
+
+      .btn {
+        color: $color-white;
+      }
+    }
+  }
+
+  .video {
+    width: 70%;
+    padding: 3em;
+
+    .title {
+      font-family: 'Dunbar Tall';
+      font-size: 26px;
+      line-height: 32px;
+      color: $color-green;
+    }
+
+    iframe {
+      margin-top: 2em;
+    }
+
+    .description {
+      padding: 2em 0;
+    }
+  }
+
+  section.cta {
+    padding: 3.5em 0;
+    position: relative;
+
+    background-image: image-url('bg-cta-basis-plena@2x.png');
+    background-size: cover;
+    color: $color-white;
+    
+    .title {
+      font-family: 'Dunbar Tall';
+      font-size: 36px;
+      line-height: 46px;
+    }
+
+    .text {
+      width: 700px;
+      font-size: 18px;
+      line-height: 26px;
+    }
+
+    .btn {
+      margin-top: 1em;
+      color: $color-white;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .basis-plena {
+    .header {
+      height: 200px;
+      padding-top: 6em;
+      background-image: image-url('bg-basis-plena-mobile@2x.png');
+
+      .title {
+        font-size: 36px;
+        line-height: 36px;
+      }
+    }
+
+    .devise-box {
+      padding: 3em 0;
+      width: 100%;
+    }
+
+    section.cta {
+      padding: 2em 0 0;
+      background-color: $color-green;
+
+      .title {
+        font-size: 26px;
+        line-height: 36px;
+      }
+
+      .text {
+        width: 100%;
+      }
+
+      .bg-bottom {
+        width: 100%;
+      }
+
+      .link {
+        padding-bottom: 2em;
+      }
+    }
+  }
+}

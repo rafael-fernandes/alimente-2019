@@ -10,4 +10,8 @@ Rails.application.routes.draw do
   get 'perguntas-frequentes' => 'static_pages#faq'
   
   get 'palestrantes/:slug' => 'speakers#show'
+
+  namespace :basis_plena do
+    resources :videos, only: [:index, :show]
+  end
 end
