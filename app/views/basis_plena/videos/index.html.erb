@@ -12,27 +12,29 @@
       Seja bem-vindo a série de aulas exclusivas para os participantes do Evento Alimente 2019.
     </div>
 
-    <table class="table">
-      <thead class="thead-light">
-        <tr>
-          <th>Nº</th>
-          <th>Título</th>
-          <th></th>
-        </tr>
-      </thead>
-
-      <tbody>
-        <% @videos.each do |video| %>
+    <div class="table-responsive">
+      <table class="table">
+        <thead class="thead-light">
           <tr>
-            <td>
-              <strong><%= video.number %></strong>
-            </td>
-            <td><%= video.title %></td>
-            <td align="right"><%= link_to 'ASSISTIR VÍDEO', basis_plena_video_path(video), class: 'btn btn-warning btn-sm' %></td>
+            <th>Nº</th>
+            <th>Título</th>
+            <th></th>
           </tr>
-        <% end %>
-      </tbody>
-    </table>
+        </thead>
+
+        <tbody>
+          <% @videos.each do |video| %>
+            <tr>
+              <td>
+                <strong><%= video.number %></strong>
+              </td>
+              <td><%= video.title %></td>
+              <td align="right"><%= link_to 'ASSISTIR VÍDEO', basis_plena_video_path(video), class: 'btn btn-warning btn-sm' %></td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+    </div>
   </div>
 
   <%= render 'cta' %>

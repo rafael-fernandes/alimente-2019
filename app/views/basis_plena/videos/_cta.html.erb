@@ -9,7 +9,13 @@
       <strong>BASIS PLENA: O SER HUMANO LEVADO A SÉRIO!</strong>
       
       <div class="link">
-        <%= link_to 'ADQUIRA NOSSOS CURSOS', 'http://www.basisplena.com.br', class: 'btn btn-warning btn-lg', target: '_blank' %>
+        <div class="d-md-none d-block">
+          <%= link_to 'ADQUIRA NOSSOS CURSOS', 'http://www.basisplena.com.br', class: 'btn btn-warning btn-block', target: '_blank' %>
+        </div>
+
+        <div class="d-md-block d-none">
+          <%= link_to 'ADQUIRA NOSSOS CURSOS', 'http://www.basisplena.com.br', class: 'btn btn-warning btn-lg', target: '_blank' %>
+        </div>
       </div>
     </div>
   </div>
