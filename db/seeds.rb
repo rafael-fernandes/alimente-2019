@@ -7,6 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 Speaker.destroy_all
+Video.destroy_all
 
 Speaker.create(
   name: 'DR. ERIK NEVES',
@@ -77,4 +78,8 @@ Speaker.create(
   instagram: 'janainaendocrino', 
   site: 'www.janainakoenen.com.br',
   position: 8
+)
+
+Video.create(
+  title: ''
 )

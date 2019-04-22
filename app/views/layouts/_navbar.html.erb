@@ -1,4 +1,4 @@
-<nav class="navbar <%= 'app-navbar' if action_name == 'home' %> <%= 'project-navbar' if action_name == 'about' or action_name == 'faq' or controller_name == 'speakers' %> navbar-expand-lg navbar-light fixed-top">
+<nav class="navbar <%= 'app-navbar' if action_name == 'home' or controller_path == 'users/sessions' %> <%= 'project-navbar' if action_name == 'about' or action_name == 'faq' or controller_name == 'speakers' %> navbar-expand-lg navbar-light fixed-top">
   <div class="container">
     <a class="navbar-brand" href="/">
       <%= image_tag 'alimente-logo@2x.png' %>
