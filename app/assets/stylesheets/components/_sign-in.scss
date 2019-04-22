@@ -25,3 +25,23 @@
     width: 400px;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .sign-in {
+    .header {
+      height: 200px;
+      padding-top: 6em;
+      background-image: image-url('bg-basis-plena-mobile@2x.png');
+
+      .title {
+        font-size: 36px;
+        line-height: 36px;
+      }
+    }
+
+    .devise-box {
+      padding: 3em 0;
+      width: 100%;
+    }
+  }
+}
