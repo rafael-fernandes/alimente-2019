@@ -10,7 +10,7 @@ Speaker.destroy_all
 Video.destroy_all
 
 Speaker.create(
-  name: 'Victor Sorrentino',
+  name: 'VICTOR SORRENTINO',
   about: "Mestrando em Gerontologia<br><br>Self & Professional Coach pelo Instituto IBC<br><br>Especialização em Endocrinologia em andamento<br><br>Especialização em Saúde do Idoso: Gestão e Assistência em Gerontologia <br><br>Especialização em Nutriendocrinologia Funcional Prevenção & Tratamento de Doenças Relacionadas à Idade<br><br>Autor do Livro: Segredos para uma Vida Longa<br><br>Especialização em Nutriendocrinologi	a Funcional e Gerenciamento do Envelhecimento Saudável<br><br>Pós - graduação em Nutrologia<br><br>Especialização em Cirurgia Geral<br><br>Especialização em Cirurgia Plástica e Reconstrução da Mama<br><br>Diretor da SOBRAF<br><br>Membro do Colégio Brasileiro de Cirurgiões<br><br>Membro do Functional	Medicine Institute<br><br>Graduação em Medicina pela Universidade Luterana do Brasil 	– ULBRA",
   image: 'victor@2x.png',
   instagram: 'drvictorsorrentino',
