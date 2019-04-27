@@ -10,12 +10,21 @@ Speaker.destroy_all
 Video.destroy_all
 
 Speaker.create(
-  name: 'DR. ERIK NEVES',
+  name: 'Victor Sorrentino',
+  about: "Mestrando em Gerontologia<br><br>Self & Professional Coach pelo Instituto IBC<br><br>Especialização em Endocrinologia em andamento<br><br>Especialização em Saúde do Idoso: Gestão e Assistência em Gerontologia <br><br>Especialização em Nutriendocrinologia Funcional Prevenção & Tratamento de Doenças Relacionadas à Idade<br><br>Autor do Livro: Segredos para uma Vida Longa<br><br>Especialização em Nutriendocrinologi	a Funcional e Gerenciamento do Envelhecimento Saudável<br><br>Pós - graduação em Nutrologia<br><br>Especialização em Cirurgia Geral<br><br>Especialização em Cirurgia Plástica e Reconstrução da Mama<br><br>Diretor da SOBRAF<br><br>Membro do Colégio Brasileiro de Cirurgiões<br><br>Membro do Functional	Medicine Institute<br><br>Graduação em Medicina pela Universidade Luterana do Brasil 	– ULBRA",
+  image: 'victor@2x.png',
+  instagram: 'drvictorsorrentino',
+  site: 'www.drvictorsorrentino.com.br'
+  position: 1
+)
+
+Speaker.create(
+  name: 'ERIK NEVES',
   about: "Há 5 anos tratando pacientes com dieta low carb, que acredita firmemente ser a mais confiável diretriz para longevidade, bem-estar e um melhor estilo de vida, além do profundo comprometimento com a medicina, nutre verdadeira paixão por correr descalço, já tendo participado de dois Ironman e uma ultramaratona. Médico da equipe brasileira de tênis de mesa durante a preparação para os Jogos Paralímpicos de 2016, foi convidado para coordenar um futuro curso on-line, em parceria com a Fundação Noakes, destinado a médicos e nutricionistas brasileiros.",
   image: 'erik-neves@2x.png',
   instagram: 'erikneves',
   twitter: 'erikneves',
-  position: 1
+  position: 2
 )
 
 Speaker.create(
@@ -24,7 +33,7 @@ Speaker.create(
   image: 'jose-neto@2x.png',
   instagram: 'drjoseneto',
   twitter: 'drjosenetomg',
-  position: 2
+  position: 3
 )
 
 Speaker.create(
@@ -33,7 +42,7 @@ Speaker.create(
   image: 'rafael-lund@2x.png',
   instagram: 'rafalund',
   twitter: 'rafalund',
-  position: 3
+  position: 4
 )
 
 Speaker.create(
@@ -42,7 +51,7 @@ Speaker.create(
   instagram: 'leticiallos',
   site: 'www.programa7x4.com.br',
   image: 'leticia-vasconcelos@2x.png',
-  position: 4
+  position: 5
 )
 
 Speaker.create(
@@ -51,7 +60,7 @@ Speaker.create(
   image: 'renata-calixto@2x.png',
   instagram: 're.calixto',
   site: 'www.vivenciesaude.com.br',
-  position: 5
+  position: 6
 )
 
 Speaker.create(
@@ -59,7 +68,7 @@ Speaker.create(
   about: "Ana Martha Moreira, uma apaixonada pelo funcionamento normal do trato gastrointestinal, sou formada em medicina pela Universidade Severino Sombra, em 2007, especializei-me em cirurgia geral e endoscopia digestiva (2008-2013). Somente após o longo tratamento de uma doença (tuberculose) e o nascimento do meu filho, é que descobri a beleza do intestino, e com ele redescobri a paixão pela medicina. Trabalho com gastroenterologia desde 2015, voltada com um olhar integrativo e funcional.",
   image: 'ana-moreira@2x.png',
   instagram: 'anamarthamoreira',
-  position: 6
+  position: 7
 )
 
 Speaker.create(
@@ -68,7 +77,7 @@ Speaker.create(
   image: 'patricia@2x.png',
   instagram: 'patritassinari',
   site: 'www.basisplena.com.br',
-  position: 7
+  position: 8
 )
 
 Speaker.create(
@@ -77,7 +86,7 @@ Speaker.create(
   image: 'janaina@2x.png',
   instagram: 'janainaendocrino', 
   site: 'www.janainakoenen.com.br',
-  position: 8
+  position: 9
 )
 
 Video.create(
