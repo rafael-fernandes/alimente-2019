@@ -178,6 +178,15 @@ section.tickets {
           margin-left: auto;
         }
       }
+
+      &.-dinner {
+        height: 175px;
+      }
+    }
+
+    .disclaimer {
+      font-size: 16px;
+      line-height: 22px;
     }
   }
 }
