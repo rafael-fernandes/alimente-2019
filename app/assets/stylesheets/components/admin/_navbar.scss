@@ -1,0 +1,26 @@
+.admin-navbar {
+  background-color: $color-green;
+
+  .navbar-brand {
+    font-size: 20px;
+    font-family: 'Dunbar Tall';
+    color: $color-white;
+
+    &:hover {
+      text-decoration: none;
+      color: $color-white;
+    }
+  }
+
+  .nav-item {
+    .nav-link {
+      text-transform: uppercase;
+    }
+
+    &:hover {
+      .nav-link {
+        color: #FFE438 !important;
+      }
+    }
+  }
+}

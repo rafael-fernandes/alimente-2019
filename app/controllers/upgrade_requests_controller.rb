@@ -25,6 +25,6 @@ class UpgradeRequestsController < ApplicationController
   end
 
   def set_upgrade_to
-    @upgrade_to = UpgradeRequest.upgrade_tos.map { |ut| [ut.last, ut.first] }
+    @upgrade_to = [["Gold 1 para VIP 1", 0], ["Gold 1 para VIP 2", 1]]
   end
 end

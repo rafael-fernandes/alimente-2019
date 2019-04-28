@@ -18,4 +18,12 @@ Rails.application.routes.draw do
   namespace :basis_plena do
     resources :videos, only: [:index, :show]
   end
+
+  namespace :admin do
+    resources :upgrade_requests do
+      member do
+        patch 'mark_as_paid'
+      end
+    end
+  end
 end

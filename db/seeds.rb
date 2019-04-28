@@ -176,3 +176,11 @@ Video.create(
   description: "Este vídeo demonstra a importância de uma base multifatorial para tratar um problema também multifatorial que é a obesidade e Síndrome Metabólica.<br><br>Cada base do Basis Plena tem como objetivo cercar a pessoa de todas as formas, para que nada passe sem ser percebido e tratado: nutrição, treino físico, consciência mental e conhecimento científico, sendo que cada um está intimamente ligado ao outro e todos formam um único e fantástico meio de tratar o ser humano holisticamente. ",
   video_url: 'VgJR1bC3gYQ'
 )
+
+unless User.exists? email: 'admin@eventoalimente.com.br'
+  User.create(
+    email: 'admin@eventoalimente.com.br',
+    password: 'admin123',
+    admin: true
+  )
+end

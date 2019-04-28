@@ -3,6 +3,13 @@ class UpgradeRequest < ApplicationRecord
   validates :email, presence: true
   validates :e_ticket, presence: true
 
-  enum upgrade_to: { 0 => 'Gold 1 para VIP 1',
-                     1 => 'Gold 1 para VIP 2' }
+  enum upgrade_to: [:gold_1_to_vip_1, :gold_1_to_vip_2]
+
+  enum status: [:pending, :paid]
+
+  after_create :set_default_status
+
+  def set_default_status
+    update(status: 'pending')
+  end
 end

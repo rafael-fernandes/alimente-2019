@@ -1,0 +1,34 @@
+<tr>
+  <td>
+    <% if upgrade_request.status == 'pending' %>
+      <div class="badge badge-info">pendente</div>
+    <% elsif upgrade_request.status == 'paid' %>
+      <div class="badge badge-success">pago</div>
+    <% end %>
+  </td>
+
+  <td><%= upgrade_request.name %></td>
+  <td><%= upgrade_request.email %></td>
+  <td><%= upgrade_request.e_ticket %></td>
+
+  <td>
+    <% if upgrade_request.upgrade_to == 'gold_1_to_vip_1' %>
+      Gold 1 para VIP 1
+    <% elsif upgrade_request.upgrade_to == 'gold_1_to_vip_2' %>
+      Gold 1 para VIP 2
+    <% end %>
+  </td>
+
+  <td>
+    <div class="btn-group">
+      <button type="button" class="btn btn-warning btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      </button>
+      <div class="dropdown-menu">
+        <%= link_to 'Marcar como paga', mark_as_paid_admin_upgrade_request_path(upgrade_request),
+                                        method: :patch,
+                                        data: { confirm: 'Você tem certeza?' },
+                                        class: 'dropdown-item' %>
+      </div>
+    </div>
+  </td>
+</tr>
