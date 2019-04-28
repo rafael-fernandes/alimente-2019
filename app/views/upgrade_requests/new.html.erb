@@ -7,6 +7,18 @@
     </div>
   </div>
 
+  <% if notice %>
+    <div class="alert alert-success">
+      <div class="container">
+        <%= notice %>
+
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+    </div>
+  <% end %>
+
   <div class="container">
     <div class="description">
       Para concluírmos sua solicitação de upgrade, precisamos que você nos informe seu número de ticket enviado por email. Sem ele não conseguiremos prosseguir com a mudança da categoria do ingresso.
@@ -17,7 +29,7 @@
         <div class="col-md-6">
           <div class="form-group">
             <%= f.label :name %>
-            <%= f.text_field :name, class: 'form-control' %>
+            <%= f.text_field :name, class: 'form-control', required: true %>
           </div>
         </div>
       </div>
@@ -26,7 +38,7 @@
         <div class="col-md-6">
           <div class="form-group">
             <%= f.label :email %>
-            <%= f.email_field :email, class: 'form-control' %>
+            <%= f.email_field :email, class: 'form-control', required: true %>
           </div>
         </div>
       </div>
@@ -35,7 +47,7 @@
         <div class="col-md-6">
           <div class="form-group">
             <%= f.label :e_ticket %>
-            <%= f.text_field :e_ticket, class: 'form-control' %>
+            <%= f.text_field :e_ticket, class: 'form-control', required: true %>
           </div>
         </div>
       </div>
