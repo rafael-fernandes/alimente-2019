@@ -182,6 +182,21 @@ section.tickets {
       &.-dinner {
         height: 175px;
       }
+
+      &.-upgrade {
+        height: 150px;
+      }
+
+      &.-sold-off {
+        border-color: $color-brown;
+        height: 150px;
+        
+        .price {
+          padding: .3rem 0;
+          background-color: $color-brown;
+          text-align: center;
+        }
+      }
     }
 
     .disclaimer {
@@ -267,19 +282,9 @@ section.tickets {
       }
     }
 
-    .ticket-type {
-      .title {
-        padding: 1rem 0;
-        font-size: 30px;
-
-        &.-adjust {
-          font-size: 25px;
-        }
-      }
-
-      .sub-title {
-        padding: .75rem 0;
-        font-size: 20px;
+    .tickets-row {
+      .disclaimer {
+        margin-bottom: 2em;
       }
     }
   }
