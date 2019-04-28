@@ -15,6 +15,8 @@ Speaker.create(
   image: 'victor@2x.png',
   instagram: 'drvictorsorrentino',
   site: 'www.drvictorsorrentino.com.br',
+  short_function: 'MÉDICO E ESCRITOR',
+  function: 'MÉDICO E ESCRITOR',
   position: 1
 )
 
@@ -24,6 +26,8 @@ Speaker.create(
   image: 'erik-neves@2x.png',
   instagram: 'erikneves',
   twitter: 'erikneves',
+  short_function: 'CLÍNICO GERAL',
+  function: 'CLÍNICO GERAL',
   position: 2
 )
 
@@ -33,6 +37,8 @@ Speaker.create(
   image: 'jose-neto@2x.png',
   instagram: 'drjoseneto',
   twitter: 'drjosenetomg',
+  short_function: 'NEFROLOGISTA',
+  function: 'CLÍNICO GERAL E NEFROLOGISTA',
   position: 3
 )
 
@@ -42,6 +48,8 @@ Speaker.create(
   image: 'rafael-lund@2x.png',
   instagram: 'rafalund',
   twitter: 'rafalund',
+  short_function: 'EDUCADOR FÍSICO',
+  function: 'EDUCADOR FÍSICO, PERSONAL TRAINER E EMPREENDEDOR',
   position: 4
 )
 
@@ -51,6 +59,8 @@ Speaker.create(
   instagram: 'leticiallos',
   site: 'www.programa7x4.com.br',
   image: 'leticia-vasconcelos@2x.png',
+  short_function: 'EDUCADORA FÍSICA',
+  function: 'EDUCADORA FÍSICA',
   position: 5
 )
 
@@ -60,6 +70,8 @@ Speaker.create(
   image: 'renata-calixto@2x.png',
   instagram: 're.calixto',
   site: 'www.vivenciesaude.com.br',
+  short_function: 'FISIOTERAPEUTA',
+  function: 'FISIOTERAPEUTA',
   position: 6
 )
 
@@ -68,6 +80,8 @@ Speaker.create(
   about: "Ana Martha Moreira, uma apaixonada pelo funcionamento normal do trato gastrointestinal, sou formada em medicina pela Universidade Severino Sombra, em 2007, especializei-me em cirurgia geral e endoscopia digestiva (2008-2013). Somente após o longo tratamento de uma doença (tuberculose) e o nascimento do meu filho, é que descobri a beleza do intestino, e com ele redescobri a paixão pela medicina. Trabalho com gastroenterologia desde 2015, voltada com um olhar integrativo e funcional.",
   image: 'ana-moreira@2x.png',
   instagram: 'anamarthamoreira',
+  short_function: 'CIRURGIÃ GERAL',
+  function: 'CIRURGIÃ GERAL E GASTROENTEROLOGISTA',
   position: 7
 )
 
@@ -77,6 +91,8 @@ Speaker.create(
   image: 'patricia@2x.png',
   instagram: 'patritassinari',
   site: 'www.basisplena.com.br',
+  short_function: 'HEALTH COACH',
+  function: 'MASTER HEALTH COACH, ESCRITORA, MÉDICA VETERINÁRIA E EMPREENDEDORA',
   position: 8
 )
 
@@ -86,6 +102,8 @@ Speaker.create(
   image: 'janaina@2x.png',
   instagram: 'janainaendocrino', 
   site: 'www.janainakoenen.com.br',
+  short_function: 'ENDOCRINOLOGISTA',
+  function: 'ENDOCRINOLOGISTA',
   position: 9
 )
 
