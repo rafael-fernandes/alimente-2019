@@ -130,7 +130,7 @@ Video.create(
 
 Video.create(
   number: 4,
-  title: 'Como mudar comportamentos/hábitos',
+  title: 'Melhorando a sua saúde e alimentação com comida de verdade',
   description: "Estudos já mostram que uma alimentação, baseada em alimentos minimamente processados são melhores para nossa saúde e nutrição.<br><br>Condições como: obesidade, sobrepeso, hipertensão, síndrome metabólica e problemas cardíacos estão diretamente relacionadas com a nossa alimentação.<br><br>A prevenção e tratamento através de estilo de vida saudável é hoje a melhor alternativa para resultados sustentáveis e permanentes.<br><br>Neste vídeo vamos entender mais a importância de uma alimentação baseada em comida de verdade.",
   video_url: 'lLlMpOi7TUw'
 )
