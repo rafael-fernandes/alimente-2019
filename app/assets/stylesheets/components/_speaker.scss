@@ -36,6 +36,14 @@
     border-radius: 100%;
   }
 
+  .function {
+    padding-bottom: 2em;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 0.1em;
+    line-height: 28px;
+  }
+
   .about {
     padding-top: 2em;
 
@@ -75,6 +83,10 @@
       padding: .75em 0 0;
       color: $color-orange;
       font-size: 36px;
+    }
+
+    .function {
+      text-align: center;
     }
 
     .about {

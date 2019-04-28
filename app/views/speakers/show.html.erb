@@ -26,6 +26,10 @@
       </div>
 
       <div class="col-md-6 about">
+        <div class="function">
+          <%= @speaker.function %>
+        </div>
+
         <%= @speaker.about.html_safe %>
 
         <div class="social d-flex">
