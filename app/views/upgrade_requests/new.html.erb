@@ -1,0 +1,62 @@
+<div class="upgrade">
+  <div class="header">
+    <div class="container h-100 d-flex align-items-center">
+      <div class="title">
+        UPGRADE DE CATEGORIA
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="description">
+      Para concluírmos sua solicitação de upgrade, precisamos que você nos informe seu número de ticket enviado por email. Sem ele não conseguiremos prosseguir com a mudança da categoria do ingresso.
+    </div>
+
+    <%= form_for @upgrade_request do |f| %>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <%= f.label :name %>
+            <%= f.text_field :name, class: 'form-control' %>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <%= f.label :email %>
+            <%= f.email_field :email, class: 'form-control' %>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <%= f.label :e_ticket %>
+            <%= f.text_field :e_ticket, class: 'form-control' %>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <%= f.label :upgrade_to %>
+            <%= f.select :upgrade_to, @upgrade_to,
+                                      { include_blank: 'Selecione uma opção' },
+                                      class: 'form-control',
+                                      required: true %>
+          </div>
+        </div>
+      </div>
+
+      <%= f.submit 'SOLICITAR UPGRADE', class: 'btn btn-success mt-2' %>
+    <% end %>
+  </div>
+
+  <div class="d-none d-md-block">
+    <%= image_tag 'bg-about-project@2x.png', class: 'bg-about-project' %>
+  </div>
+</div>

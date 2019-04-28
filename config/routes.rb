@@ -11,6 +11,10 @@ Rails.application.routes.draw do
   
   get 'palestrantes/:slug' => 'speakers#show'
 
+  get 'upgrade' => 'upgrade_requests#new', as: :new_upgrade_request
+
+  resources :upgrade_requests, only: [:create]
+
   namespace :basis_plena do
     resources :videos, only: [:index, :show]
   end

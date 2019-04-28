@@ -1,0 +1,57 @@
+.upgrade {
+  padding-bottom: 15em;
+  position: relative;
+
+  .header {
+    height: 260px;
+    background-image: image-url('bg-speaker@2x.png');
+    background-size: cover;
+  }
+  
+  .title {
+    padding-top: 2.5em;
+    font-family: 'Dunbar Tall';
+    font-size: 36px;
+    font-weight: 500;
+    color: $color-white;
+  }
+
+  .description {
+    padding-top: 3em;
+    max-width: 600px;
+  }
+
+  form {
+    padding-top: 2em;
+  }
+
+  .bg-about-project {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .upgrade {
+    padding-bottom: 4em;
+
+    .header {
+      height: 200px;
+      background-image: image-url('bg-speaker-mobile@2x.png');
+    }
+
+    .title {
+      padding-top: 1.5em;
+      line-height: 42px;
+    }
+
+    form {
+      padding-top: 1.5em;
+    }
+
+    .description {
+      padding-top: 1.5em;
+    }
+  }
+}

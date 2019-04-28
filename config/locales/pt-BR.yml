@@ -4,8 +4,16 @@ pt-BR:
       user:
         one: Usuário
         other: Usuários
+      upgrade_request:
+        one: Requisição de upgrade
+        one: Requisições de upgrade
     attributes:
       user:
         email: Email
         password: Senha
         remember_me: Lembre-se de mim
+      upgrade_request:
+        name: Nome
+        email: Email
+        e_ticket: E-ticket
+        upgrade_to: Categoria para o upgrade
