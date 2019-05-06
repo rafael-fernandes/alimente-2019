@@ -15,13 +15,18 @@ section.speakers {
   }
 
   .international {
-    padding: 4em 0 4em;
+    padding: 4em 0 0;
     position: relative;
     background-color: $color-orange;
 
     .title {
       color: $color-white;
       border-color: $color-white;
+    }
+
+    .container {
+      padding-top: 5em;
+      width: 60%;
     }
 
     .international-speaker {
@@ -102,6 +107,26 @@ section.speakers {
         background-color: $color-orange;
       }
     }
+
+    &.-international {
+      max-width: 236px;
+      max-height: 236px;
+      background-color: $color-yellow;
+
+      .name {
+        font-size: 26px;
+
+        background-color: #FDC603;
+      }
+
+      &:hover {
+        background-color: $color-cyan;
+        
+        .name {
+          background-color: $color-cyan;
+        }
+      }
+    }
   }
 
   .short-function {
@@ -111,6 +136,10 @@ section.speakers {
     text-align: center;
     font-weight: 500;
     color: $color-yellow;
+
+    &.-white {
+      color: $color-white;
+    }
   }
 }
 

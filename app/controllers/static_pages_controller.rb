@@ -1,6 +1,7 @@
 class StaticPagesController < ApplicationController
   def home
-    @speakers = Speaker.all.order(position: :asc)
+    @speakers = Speaker.national.order(position: :asc)
+    @international_speakers = Speaker.international.order(position: :asc)
   end
 
   def about

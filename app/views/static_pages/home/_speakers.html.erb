@@ -18,36 +18,22 @@
       </div>
     </div>
 
-    <div class="container international-speaker d-flex">
-      <%= image_tag 'luis-villasenor@2x.png', class: 'photo align-self-start' %>
+    <div class="container">
+      <div class="row">
+        <% @international_speakers.each do |speaker| %>
+          <div class="col-md-6 d-flex justify-content-center flex-column">
+            <a href="/palestrantes/<%= speaker.slug %>" class="align-self-center">
+              <div class="speaker -international">
+                <%= image_tag speaker.image, class: 'image-responsive' %>
+                <div class="name"><%= speaker.name %></div>
+              </div>
+            </a>
 
-      <div class="info">
-        <div class="name">LUÍS VILLASEÑOR</div>
-
-        <div class="about">
-          Nascido no México, Luís sempre foi apaixonado por fitness e nutrição, devido ao seu interesse em melhorar seu próprio físico. Sempre curioso para saber o por quê e como funcionam as coisas, Luís estudou tudo sobre nutrição e treinamento de força desde seus 17 anos.
-          <br><br>
-          Inconformado com a metodologia tradicional de “bulking” e “cutting”, querendo manter-se sempre com baixa gordura corporal, ele descobriu a cetogênica em 2001. Desde então manteve-se em uma dieta de baixo carboidrato, usando-a para recompor favoravelmente seu corpo e sua saúde. Devido a isto, Luís decidiu fundar a KETOGAINS em 2007 para compartilhar suas experiências, conhecimentos e ajudar as pessoas a alcançar seus objetivos de saúde e bem-estar.
-          <br><br>
-          Hoje em dia, Luís é considerado uma das pessoas mais experientes e conhecedoras das dietas de baixo carboidrato e cetogênica a nível mundial e é a pessoa para consultar quando se fala em aplicar uma dieta cetogênica para treinamento e recomposição corporal.
-        </div>
-
-        <div class="social d-flex align-items-center">
-          <div class="media d-inline-flex align-items-center">
-            <%= image_tag 'instagram-international@2x.png' %>
-            <strong><%= link_to '@ketogains', 'instagram.com/ketogains', target: '_blank', class: 'link' %></strong>
+            <div class="short-function -white">
+              <%= speaker.short_function %>
+            </div>
           </div>
-
-          <div class="media d-inline-flex align-items-center pl-5">
-            <%= image_tag 'facebook-international@2x.png' %>
-            <strong><%= link_to 'ketogains', 'facebook.com/ketogains', target: '_blank', class: 'link' %></strong>
-          </div>
-
-          <div class="media d-inline-flex align-items-center pl-5">
-            <%= image_tag 'instagram-international@2x.png' %>
-            <strong><%= link_to '@darthluiggi', 'instagram.com/darthluiggi', target: '_blank', class: 'link' %></strong>
-          </div>
-        </div>
+        <% end %>
       </div>
     </div>
   </div>

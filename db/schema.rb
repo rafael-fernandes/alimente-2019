@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_04_28_172814) do
+ActiveRecord::Schema.define(version: 2019_05_06_212738) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -28,6 +28,10 @@ ActiveRecord::Schema.define(version: 2019_04_28_172814) do
     t.integer "position"
     t.string "short_function"
     t.string "function"
+    t.boolean "international"
+    t.string "video_id"
+    t.string "other_instagram"
+    t.string "facebook"
   end
 
   create_table "upgrade_requests", force: :cascade do |t|

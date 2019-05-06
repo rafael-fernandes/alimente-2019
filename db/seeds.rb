@@ -10,6 +10,30 @@ Speaker.destroy_all
 Video.destroy_all
 
 Speaker.create(
+  name: 'LUIS VILLASEÑOR',
+  about: "Nascido no México, Luis sempre foi apaixonado por fitness e nutrição, devido ao seu interesse em melhorar seu próprio físico. Sempre curioso para saber o por quê e como funcionam as coisas, Luis estudou tudo sobre nutrição e treinamento de força desde seus 17 anos.<br><br>Inconformado com a metodologia tradicional de “bulking” e “cutting”, querendo manter-se sempre com baixa gordura corporal, ele descobriu a cetogênica em 2001. Desde então manteve-se em uma dieta de baixo carboidrato, usando-a para recompor favoravelmente seu corpo e sua saúde. Devido a isto, Luis decidiu fundar a KETOGAINS em 2007 para compartilhar suas experiências, conhecimentos e ajudar as pessoas a alcançar seus objetivos de saúde e bem-estar. <br><br>Hoje em dia, Luis é considerado uma das pessoas mais experientes e conhecedoras das dietas de baixo carboidrato e cetogênica a nível mundial e é a pessoa para consultar quando se fala em aplicar uma dieta cetogênica para treinamento e recomposição corporal.",
+  image: 'luis-villasenor@2x.png',
+  site: 'www.ketogains.com',
+  other_instagram: 'ketogains',
+  instagram: 'darthluiggi',
+  facebook: 'ketogains',
+  short_function: 'NUTRICIONISTA E EDUCADOR FÍSICO',
+  function: 'NUTRICIONISTA E EDUCADOR FÍSICO',
+  position: 1,
+  international: true
+)
+
+Speaker.create(
+  name: 'AMY BERGER',
+  about: "Nascido no México, Luis sempre foi apaixonado por fitness e nutrição, devido ao seu interesse em melhorar seu próprio físico. Sempre curioso para saber o por quê e como funcionam as coisas, Luis estudou tudo sobre nutrição e treinamento de força desde seus 17 anos.<br><br>Inconformado com a metodologia tradicional de “bulking” e “cutting”, querendo manter-se sempre com baixa gordura corporal, ele descobriu a cetogênica em 2001. Desde então manteve-se em uma dieta de baixo carboidrato, usando-a para recompor favoravelmente seu corpo e sua saúde. Devido a isto, Luis decidiu fundar a KETOGAINS em 2007 para compartilhar suas experiências, conhecimentos e ajudar as pessoas a alcançar seus objetivos de saúde e bem-estar. <br><br>Hoje em dia, Luis é considerado uma das pessoas mais experientes e conhecedoras das dietas de baixo carboidrato e cetogênica a nível mundial e é a pessoa para consultar quando se fala em aplicar uma dieta cetogênica para treinamento e recomposição corporal.",
+  image: 'amy-berge@2x.png',
+  short_function: 'NUTRICIONISTA',
+  function: 'NUTRICIONISTA',
+  position: 2,
+  international: true
+)
+
+Speaker.create(
   name: 'VICTOR SORRENTINO',
   about: "Victor Sorrentino é médico pós-graduado em nutrologia, especializado em saúde do idoso: gestão e assistência em gerontologia, é mestrando em gerontologia, self & professional coach pelo Instituto IBC, especializado em nutriendocrinologia funcional prevenção e tratamento de doenças relacionadas à idade, especializado em cirurgia geral, plástica e reconstrução de mama. É diretor da SOBRAF, membro do Colégio Brasileiro de Cirurgiões e do Functional Medicine Institue.<br><br>O médico gaúcho carrega em seu DNA a relação com a Cirurgia Plástica. Filho de conceituado Cirurgião Plástico, respirou Medicina desde cedo e seguiu sua formação especializando-se no Rio de Janeiro.<br><br>Autor do livro SEGREDOS PARA UMA VIDA LONGA, palestrante internacional e ativista da ciência dos alimentos, que conscientiza sobre o cartel das industrias farmacêuticas e alimentícias que lucram às custas da saúde das populações.",
   image: 'victor@2x.png',
@@ -17,7 +41,8 @@ Speaker.create(
   site: 'www.drvictorsorrentino.com.br',
   short_function: 'MÉDICO E ESCRITOR',
   function: 'MÉDICO E ESCRITOR',
-  position: 1
+  position: 1,
+  international: false
 )
 
 Speaker.create(
@@ -28,7 +53,8 @@ Speaker.create(
   twitter: 'erikneves',
   short_function: 'CLÍNICO GERAL',
   function: 'CLÍNICO GERAL',
-  position: 2
+  position: 2,
+  international: false
 )
 
 Speaker.create(
@@ -39,7 +65,8 @@ Speaker.create(
   twitter: 'drjosenetomg',
   short_function: 'NEFROLOGISTA',
   function: 'CLÍNICO GERAL E NEFROLOGISTA',
-  position: 3
+  position: 3,
+  international: false
 )
 
 Speaker.create(
@@ -50,7 +77,8 @@ Speaker.create(
   twitter: 'rafalund',
   short_function: 'EDUCADOR FÍSICO',
   function: 'EDUCADOR FÍSICO, PERSONAL TRAINER E EMPREENDEDOR',
-  position: 4
+  position: 4,
+  international: false
 )
 
 Speaker.create(
@@ -61,7 +89,8 @@ Speaker.create(
   image: 'leticia-vasconcelos@2x.png',
   short_function: 'EDUCADORA FÍSICA',
   function: 'EDUCADORA FÍSICA',
-  position: 5
+  position: 5,
+  international: false
 )
 
 Speaker.create(
@@ -72,7 +101,8 @@ Speaker.create(
   site: 'www.vivenciesaude.com.br',
   short_function: 'FISIOTERAPEUTA',
   function: 'FISIOTERAPEUTA',
-  position: 6
+  position: 6,
+  international: false
 )
 
 Speaker.create(
@@ -82,7 +112,8 @@ Speaker.create(
   instagram: 'anamarthamoreira',
   short_function: 'CIRURGIÃ GERAL',
   function: 'CIRURGIÃ GERAL E GASTROENTEROLOGISTA',
-  position: 7
+  position: 7,
+  international: false
 )
 
 Speaker.create(
@@ -93,7 +124,8 @@ Speaker.create(
   site: 'www.basisplena.com.br',
   short_function: 'HEALTH COACH',
   function: 'MASTER HEALTH COACH, ESCRITORA, MÉDICA VETERINÁRIA E EMPREENDEDORA',
-  position: 8
+  position: 8,
+  international: false
 )
 
 Speaker.create(
@@ -104,7 +136,8 @@ Speaker.create(
   site: 'www.janainakoenen.com.br',
   short_function: 'ENDOCRINOLOGISTA',
   function: 'ENDOCRINOLOGISTA',
-  position: 9
+  position: 9,
+  international: false
 )
 
 Video.create(
