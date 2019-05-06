@@ -140,6 +140,17 @@ Speaker.create(
   international: false
 )
 
+Speaker.create(
+  name: 'ANNA FLÁVIA',
+  about: "Anna Flávia de Araujo Fernandes, neta e filha de produtores rurais, apaixonada por ruminantes e aves. Zootecnista (UPIS), com mestrado (UNESP/Jaboticabal) e doutorado (UNESP/Jaboticabal) em Zootecnia e atual pós-doutoranda em Genética na UnB/Brasília. Fui professora de ciências agrárias, consultora em genética e bovinocultura de corte; responsável técnica em granja de ovos comerciais. Sou parceira do projeto GlamourRural e membro do Dieta Carnívora Brasil, atuando como consultora em pecuária. Há 4 anos aprendi a jejuar e a comer comida de verdade, sendo os 8 últimos meses no estilo carnívoro. Meu objetivo é esclarecer produtores e consumidores quanto aos mitos relacionados à criação de animais, contribuindo para produção e consumo de carnes e ovos, de forma segura, econômica e ambientalmente correta.",
+  image: 'anna-flavia@2x.png',
+  instagram: 'dra_annaflavia', 
+  short_function: 'ZOOTECNISTA',
+  function: 'ZOOTECNISTA',
+  position: 10,
+  international: false
+)
+
 Video.create(
   number: 1,
   title: 'Desenvolvimento global e estilo de vida saudável',
