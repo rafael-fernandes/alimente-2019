@@ -47,7 +47,7 @@ Speaker.create(
 
 Speaker.create(
   name: 'ERIK NEVES',
-  about: "Há 5 anos tratando pacientes com dieta low carb, que acredita firmemente ser a mais confiável diretriz para longevidade, bem-estar e um melhor estilo de vida, além do profundo comprometimento com a medicina, nutre verdadeira paixão por correr descalço, já tendo participado de dois Ironman e uma ultramaratona. Médico da equipe brasileira de tênis de mesa durante a preparação para os Jogos Paralímpicos de 2016, foi convidado para coordenar um futuro curso on-line, em parceria com a Fundação Noakes, destinado a médicos e nutricionistas brasileiros.",
+  about: "Há 6 anos vem tratando pacientes com dieta low carb, que acredita firmemente ser a mais sustentável abordagem para alcançar a longevidade, o bem-estar e a saúde. Paralelamente, é coordenador médico de uma empresa de home care nacional que trata de pacientes acamados e com sequelas graves, a maioria vítimas das doenças da modernidade, que provavelmente seriam evitadas ou postergadas por uma dieta mais saudável. Além do profundo comprometimento com a Medicina, nutre verdadeira paixão por correr descalço, já tendo participado de dois Ironman e uma ultramaratona. Médico da equipe brasileira de tênis de mesa durante a preparação para os Jogos Paralímpicos de 2016, foi convidado para coordenar um futuro curso on-line, em parceria com a Fundação Noakes, destinado a médicos e nutricionistas brasileiros.",
   image: 'erik-neves@2x.png',
   instagram: 'erikneves',
   twitter: 'erikneves',
