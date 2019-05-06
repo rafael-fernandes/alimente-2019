@@ -153,6 +153,10 @@ section.speakers {
         border: 3px solid $color-white;
       }
 
+      .container {
+        width: 100%;
+      }
+
       .international-speaker {
         padding: 2em 1em;
         flex-direction: column;
@@ -233,8 +237,14 @@ section.speakers {
     padding-bottom: 2em;
 
     .international {
+      padding-bottom: 0;
+
       .title {
         font-size: 18px;
+      }
+
+      .container {
+        padding-top: 2em;
       }
     }
 
@@ -246,16 +256,36 @@ section.speakers {
         padding: .2rem .4em;
         font-size: 11px;
       }
+
+      &.-international {
+        width: 180px;
+        height: 180px;
+
+        .name {
+          font-size: 20px;
+        }
+      }
     }
 
     .short-function {
       font-size: 13px;
+
+      &.-international {
+        margin-bottom: 2em;
+        font-size: 16px;
+      }
     }
   }
 }
 
-@media screen and (min-width: 325px) and (max-width: 424px) {
+@media screen and (min-width: 375px) and (max-width: 424px) {
   section.speakers {
+    .international {
+      .container {
+        padding-top: 4em;
+      }
+    }
+
     .speaker {
       width: 160px;
       height: 160px;
@@ -263,6 +293,15 @@ section.speakers {
       .name {
         padding: .3rem .6rem;
         font-size: 13px;
+      }
+
+      &.-international {
+        width: 180px;
+        height: 180px;
+
+        .name {
+          font-size: 20px;
+        }
       }
     }
   }
@@ -279,6 +318,15 @@ section.speakers {
       .name {
         padding: .4rem .6rem;
         font-size: 15px;
+      }
+
+      &.-international {
+        width: 230px;
+        height: 230px;
+
+        .name {
+          font-size: 26px;
+        }
       }
     }
   }
