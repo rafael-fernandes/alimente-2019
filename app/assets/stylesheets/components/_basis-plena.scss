@@ -89,6 +89,36 @@
       color: $color-white;
     }
   }
+
+  section.discount {
+    margin-top: -2px;
+    padding: 2.5em 0;
+    color: $color-white;
+    background-color: #3DAD82;
+
+    .text {
+      width: 700px;
+      font-size: 18px;
+      line-height: 26px;
+    }
+
+    .btn {
+      margin-top: 1em;
+      color: $color-white;
+    }
+
+    .coupon {
+      align-self: center;
+      margin-left: auto;
+      padding: 2rem;
+      color: $color-yellow;
+      border: 4px dashed $color-yellow;
+      font-family: 'Dunbar Tall';
+      font-size: 36px;
+      font-weight: 500;
+      letter-spacing: .1em;
+    }
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -137,8 +167,8 @@
       }
     }
 
-    section.cta {
-      padding: 2em 0 0;
+    section.cta, section.discount {
+      padding: 2em 0 2em;
       background-color: $color-green;
 
       .title {
@@ -156,6 +186,16 @@
 
       .link {
         padding-bottom: 2em;
+      }
+    }
+
+    section.discount {
+      padding-top: 0;
+
+      .coupon {
+        width: 100%;
+        font-size: 26px;
+        text-align: center;
       }
     }
   }
