@@ -61,6 +61,7 @@ section.tickets {
     }
 
     .timer-wrapper {
+      margin-left: auto;
       font-family: 'Dunbar Tall';
       font-weight: 500;
 
@@ -68,6 +69,7 @@ section.tickets {
         padding: 1rem;
         background-color: $color-orange;
         color: $color-white;
+        text-align: right;
         font-size: 32px;
       }
     }
@@ -76,6 +78,7 @@ section.tickets {
       padding-top: 2em;
 
       .ticket {
+        display: inline-block;
         font-family: 'Dunbar Tall';
         font-weight: 500;
 
@@ -212,6 +215,43 @@ section.tickets {
   section.tickets {
     padding: 2.5em 0;
 
+    .pre-venda {
+      .category {
+        width: 100%;
+        font-size: 36px;
+        line-height: 36px;
+      }
+
+      .timer-wrapper {
+        margin-top: 1.5em;
+        margin-left: 0;
+        margin-right: auto;
+
+        .title {
+          text-align: left;
+        }
+      }
+
+      .tickets {
+        .ticket {
+          display: block;
+          
+          &:last-child {
+            padding-top: 1em;
+            margin-left: 0;
+          }
+
+          .price {
+            font-size: 36px;
+          }
+
+          .ticket-category {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+
     .title-wrapper {
       padding: 0 1em;
 
@@ -250,6 +290,8 @@ section.tickets {
       .tickets-info {
         .tickets {
           .ticket {
+            display: block;
+
             .price {
               font-size: 30px;
               line-height: 36px;
