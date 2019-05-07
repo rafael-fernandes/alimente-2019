@@ -39,69 +39,72 @@ section.tickets {
     z-index: 1;
   }
 
-  .promotional-banner {
-    width: 100%;
-    padding: 2em;
+  .pre-venda-button {
+    margin-top: -1px;
     margin-bottom: 2em;
+    border-radius: 0;
+  }
 
-    color: $color-white;
-    font-family: 'Dunbar Tall';
+  .pre-venda {
+    padding: 1.5em;
 
-    background: linear-gradient(#48cf9b 0%, #41bb8d 100%);
+    color: $color-brown;
+    border: 2px solid $color-orange;
 
-    .tickets-info {
-      > .title {
-        padding: .75rem 1rem;
-        margin-bottom: 1.5rem;
-        display: inline-block;
+    .category {
+      padding: 1rem;
+      font-family: 'Dunbar Tall';
+      font-size: 42px;
+      line-height: 42px;
+      font-weight: 500;
+      border: 2px solid $color-brown;
+    }
 
-        font-size: 42px;
-        line-height: 42px;
-        border: 2px solid $color-white;
+    .timer-wrapper {
+      font-family: 'Dunbar Tall';
+      font-weight: 500;
+
+      .timer {
+        padding: 1rem;
+        background-color: $color-orange;
+        color: $color-white;
+        font-size: 32px;
       }
+    }
+
+    .tickets {
+      padding-top: 2em;
 
       .ticket {
-        display: inline-block;
+        font-family: 'Dunbar Tall';
+        font-weight: 500;
 
         .price {
           font-size: 42px;
-          line-height: 54px;
+          line-height: 52px;
+        }
+
+        .ticket-category {
+          font-size: 20px;
+          line-height: 26px;
         }
 
         &:last-child {
           margin-left: 2em;
         }
       }
-
-      .benefits {
-        padding-top: 1em;
-        font-family: 'Sofia Pro' !important;
-        font-weight: 300;
-      }
     }
 
-    .timer-wrapper {
-      .title {
-        padding-bottom: 1em;
-      }
-
-      .timer {
-        width: 330px;
-        padding: 1rem;
-        font-size: 72px;
-        line-height: 72px;
-        text-align: center;
-        background-color: $color-yellow;
-      }
+    .benefits, .transfers {
+      font-size: 16px;
     }
 
-    .disclaimer {
-      padding-top: 1em;
-      font-family: 'Sofia Pro';
+    .benefits {
+      padding: 2em 0 1em;
+    }
 
-      .btn, a {
-        color: $color-white;
-      }
+    .transfers a {
+      color: $color-brown;
     }
   }
 
@@ -225,59 +228,6 @@ section.tickets {
     .container .row {
       .col-md-4:nth-child(2) {
         margin: 2em 0;
-      }
-    }
-
-    .promotional-banner {
-      padding: 1em;
-
-      .d-flex {
-        flex-wrap: wrap;
-      }
-
-      .tickets-info {
-        width: 100%;
-
-        .title {
-          padding: 0.25rem 0;
-          display: block;
-
-          font-size: 24px;
-          text-align: center;
-        }
-
-        .ticket {
-          .price {
-            font-size: 26px;
-            line-height: 30px;
-          }
-
-          .ticket-type {
-            font-size: 12px;
-          }
-
-          &:last-child {
-            margin-left: 1.2em;
-          }
-        }
-      }
-
-      .timer-wrapper {
-        padding-top: 1.5em;
-        margin-left: 0 !important;
-
-        .timer {
-          width: 200px;
-
-          font-size: 42px;
-          line-height: 54px;
-        }
-      }
-
-      .disclaimer {
-        .btn {
-          font-size: 15px;
-        }
       }
     }
 
