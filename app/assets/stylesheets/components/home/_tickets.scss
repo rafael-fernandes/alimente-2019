@@ -105,10 +105,16 @@ section.tickets {
     }
   }
 
-  .tickets-row {
-    .category {
-      padding: .5rem 0;
-      margin-bottom: 1em;
+  .ticket-row {
+    .tickets {
+      padding-top: 2em;
+    }
+
+    .ticket-category {
+      height: 363px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
 
       border: 2px solid $color-brown;
 
@@ -119,14 +125,14 @@ section.tickets {
       text-transform: uppercase;
       color: $color-brown;
 
-      &.--adjust {
-        font-size: 18px;
+      &.-pre-event {
+        height: 230px;
       }
     }
 
     .ticket {
-      height: 320px;
-      padding: .75rem 0 0 0;
+      height: 363px;
+      padding: 1rem 0 0 0;
       margin-bottom: 1.5em;
 
       justify-content: space-between;
@@ -139,6 +145,7 @@ section.tickets {
         font-size: 20px;
         font-weight: 500;
         text-transform: uppercase;
+        color: $color-brown;
       }
 
       .bar {
@@ -168,7 +175,8 @@ section.tickets {
         color: $color-white;
 
         .value {
-          display: inline-flex;
+          padding: .5em 0;
+          text-align: center;
         }
 
         .btn {
@@ -179,12 +187,8 @@ section.tickets {
         }
       }
 
-      &.-dinner {
-        height: 175px;
-      }
-
-      &.-upgrade {
-        height: 150px;
+      &.-pre-event {
+        height: 230px;
       }
 
       &.-sold-off {
@@ -197,11 +201,6 @@ section.tickets {
           text-align: center;
         }
       }
-    }
-
-    .disclaimer {
-      font-size: 16px;
-      line-height: 22px;
     }
   }
 }
@@ -282,9 +281,14 @@ section.tickets {
       }
     }
 
-    .tickets-row {
-      .disclaimer {
-        margin-bottom: 2em;
+    .ticket-row {
+      .ticket-category {
+        margin-bottom: 1em;
+        height: 85px;
+
+        &.-pre-event {
+          height: 85px;
+        }
       }
     }
   }

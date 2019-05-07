@@ -19,6 +19,8 @@
 //= require_tree .
 
 $(document).on('turbolinks:load', function () {
+  $('[data-toggle="tooltip"]').tooltip();
+  
   $(window).scroll(function () {
     var scroll = $(window).scrollTop();
     if (scroll < 75) {
