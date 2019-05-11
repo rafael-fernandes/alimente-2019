@@ -1,4 +1,6 @@
 class StaticPagesController < ApplicationController
+  layout 'agreement', only: :agreement_term
+
   def home
     @speakers = Speaker.national.order(position: :asc)
     @international_speakers = Speaker.international.order(position: :asc)
@@ -11,5 +13,9 @@ class StaticPagesController < ApplicationController
   end
 
   def faq
+  end
+
+  def agreement_term
+    @user = current_user
   end
 end

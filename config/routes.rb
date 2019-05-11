@@ -13,7 +13,11 @@ Rails.application.routes.draw do
 
   get 'upgrade' => 'upgrade_requests#new', as: :new_upgrade_request
 
+  get 'agreement_term' => 'static_pages#agreement_term'
+
   resources :upgrade_requests, only: [:create]
+
+  resources :users, only: :update
 
   namespace :basis_plena do
     resources :videos, only: [:index, :show]
