@@ -1,0 +1,14 @@
+<% unless user.admin %>
+  <tr>
+    <td>
+      <% if user.term %>
+        <%= fa_icon 'check', class: 'text-success' %>
+      <% end %>
+    </td>
+    
+    <td><%= user.name %></td>
+    <td><%= user.email %></td>
+    <td><%= user.e_ticket %></td>
+    <td><%= user.created_at.strftime('%d/%m/%y') %></td>
+  </tr>
+<% end %>

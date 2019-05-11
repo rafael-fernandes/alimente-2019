@@ -1,0 +1,43 @@
+<div class="admin-module">
+  <div class="admin-title">
+    <div class="container">
+      <h2>Participantes</h2>
+    </div>
+  </div>
+
+  <% if notice %>
+    <div class="alert alert-success">
+      <div class="container">
+        <%= notice %>
+
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+    </div>
+  <% end %>
+
+  <div class="container admin-content">
+    <% if @users.empty? %>
+      <div class="alert alert-info">
+        Ainda não há participantes.
+      </div>
+    <% else %>
+      <table class="table">
+        <thead class="thead-light">
+          <tr>
+            <th>Termo</th>
+            <th>Nome</th>
+            <th>Email</th>
+            <th>E-ticket</th>
+            <th>Criado em</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <%= render @users %>
+        </tbody>
+      </table>
+    <% end %>
+  </div>
+</div>

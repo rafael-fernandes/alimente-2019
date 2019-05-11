@@ -29,5 +29,7 @@ Rails.application.routes.draw do
         patch 'mark_as_paid'
       end
     end
+
+    resources :users
   end
 end

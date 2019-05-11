@@ -12,7 +12,7 @@
           <%= link_to 'Solicitações de upgrade', admin_upgrade_requests_path, class: 'nav-link' %>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Participantes</a>
+          <%= link_to 'Participantes', admin_users_path, class: 'nav-link' %>
         </li>
         <li class="nav-item">
           <%= link_to 'Sair', destroy_user_session_path, method: :delete, class: 'nav-link' %>
