@@ -151,6 +151,18 @@ Speaker.create(
   international: false
 )
 
+Speaker.create(
+  name: 'DJULYE MARQUATO',
+  about: "Nutricionista clínica com foco em dieta baseada em comida de verdade, e experiência em emagrecimento e doenças crônicas não transmissíveis, e também idealizadora de cursos online de emagrecimento saudável. Acredita na construção dos pilares de um estilo de vida saudável por meio da alimentação, movimento, emoções e hábitos salutares no dia a dia, tem na jovialidade profissional uma perspicácia sem precedentes.",
+  image: 'djulye@2x.png',
+  instagram: 'djulye',
+  twitter: 'djulye_',
+  short_function: 'NUTRICIONISTA',
+  function: 'NUTRICIONISTA',
+  position: 11,
+  international: false
+)
+
 Video.create(
   number: 1,
   title: 'Desenvolvimento global e estilo de vida saudável',

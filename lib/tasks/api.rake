@@ -5,7 +5,7 @@ namespace :api do
     api_token = '089d8237004e4b2b53fd29dc82509d1dee868f64803d24b68c924bed3a9d5518'
 
     # first request
-    participants = RestClient.get 'https://api.sympla.com.br//public/v3/events/322894/participants', { s_token: api_token }, { page: 1, page_size: 200 }
+    participants = RestClient.get 'https://api.sympla.com.br//public/v3/events/322894/participants', { s_token: api_token, params: { page: 1, page_size: 100 }}
     
     participants = JSON.parse(participants.body)
     data = participants["data"]
