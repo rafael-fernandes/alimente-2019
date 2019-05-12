@@ -15,7 +15,7 @@ namespace :api do
       participants["data"].each do |participant|
         name = "#{participant["first_name"]} #{participant["last_name"]}" 
         email = participant["email"].downcase
-        e_ticket = participant["ticket_number"]
+        e_ticket = participant["ticket_number"].gsub('-', '')
         
         unless User.exists? email: email
           User.create(
@@ -26,6 +26,10 @@ namespace :api do
             term: false,
             admin: false
           )
+        else
+          user = User.find_by_email email
+          user.password = e_ticket
+          user.save
         end
       end
       
