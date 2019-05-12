@@ -1,0 +1,4 @@
+$('.users tbody').html('<%= j (render @users) %>');
+
+$('.pagination').html("<%= j(will_paginate @users, renderer: WillPaginate::ActionView::BootstrapLinkRenderer) %>");
+$('.pagination a').attr('data-remote', 'true');

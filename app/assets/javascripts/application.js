@@ -31,4 +31,8 @@ $(document).on('turbolinks:load', function () {
       $('.project-navbar').css('background', '#D16908');
     }
   });
+
+  $('.user-search input').on('keyup', function() {
+    $('.user-search').submit();
+  });
 });

@@ -1,4 +1,4 @@
-<div class="admin-module">
+<div class="admin-module pb-5">
   <div class="admin-title">
     <div class="container">
       <h2>Participantes</h2>
@@ -23,7 +23,11 @@
         Ainda não há participantes.
       </div>
     <% else %>
-      <table class="table">
+      <form action="/admin/users" class="user-search" data-remote="true">
+        <input class="form-control" type="search" name="q" placeholder="Pesquise por nome, email ou e-ticket">
+      </form>
+
+      <table class="table users mt-4">
         <thead class="thead-light">
           <tr>
             <th>Termo</th>
@@ -38,6 +42,10 @@
           <%= render @users %>
         </tbody>
       </table>
+
+      <div class="d-flex justify-content-center pt-4">
+        <%= will_paginate @users, renderer: WillPaginate::ActionView::BootstrapLinkRenderer %>
+      </div>
     <% end %>
   </div>
 </div>

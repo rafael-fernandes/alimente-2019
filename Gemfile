@@ -39,6 +39,9 @@ gem 'bootsnap', '>= 1.1.0', require: false
 
 gem 'bootstrap', '~> 4.3.1'
 
+gem 'will_paginate'
+gem 'will_paginate-bootstrap4'
+
 gem 'jquery-rails'
 
 gem 'devise'
