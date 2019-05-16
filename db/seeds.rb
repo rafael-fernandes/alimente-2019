@@ -142,7 +142,7 @@ Speaker.create(
 )
 
 Speaker.create(
-  name: 'LETICIA VASCONCELOS',
+  name: 'LETÍCIA VASCONCELLOS',
   about: "Letícia é licenciada em educação física pela Universidade de Mogi as Cruzes (UMC) e especializada em fisiologia do exercício e pilates. Atua há 6 anos com dor crônica, atuando com reorganização postural e do movimento, condicionamento e reabilitação de pacientes com dores crônicas, lesões musculoesqueléticas, fibromialgia, prevenção de dores, promovendo o retorno do indivíduo às atividades físicas diárias e prática esportiva.",
   instagram: 'leticiallos',
   site: 'www.programa7x4.com.br',
