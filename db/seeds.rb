@@ -39,9 +39,21 @@ Speaker.create(
   image: 'victor@2x.png',
   instagram: 'drvictorsorrentino',
   site: 'www.drvictorsorrentino.com.br',
-  short_function: 'MÉDICO E ESCRITOR',
-  function: 'MÉDICO E ESCRITOR',
+  short_function: 'MÉDICO, ESCRITOR E PALESTRANTE',
+  function: 'MÉDICO, ESCRITOR E PALESTRANTES',
   position: 1,
+  international: false
+)
+
+Speaker.create(
+  name: 'ITALO MARSILI',
+  about: "Italo Marsili é médico psiquiatra formado pela Universidade Federal do Rio de Janeiro. Com mais de dez anos de experiência, Italo trabalhou como psiquiatra forense canônico no Tribunal Eclesiástico de São Sebastião do Rio de Janeiro, é autor do best seller 'Os 4 Temperamentos' (atualmente o livro mais vendido na categoria Psicologia da Educação na Amazon) e ministra cursos online nas áreas de relacionamentos, temperamentos e suplementação, além do seu Curso Presencial para Psicólogos, Psiquiatras, Coaches e Intrometidos, em várias cidades brasileiras. É criador do Guerrilha Way, um programa pioneiro de desenvolvimento e amadurecimento pessoal. Com mais de 600 mil seguidores no Instagram, Italo se dedica à produção de conteúdo para as redes sociais, transmitindo lives diárias que atingem de 7 a 12 mil pessoas ao vivo. Recebeu o prêmio Digital Awards Brasil 2018, na categoria Redes Sociais. Italo é casado com Samia Marsili e pai 6 filhos, até o momento.",
+  image: 'italo@2x.png',
+  instagram: 'italomarsili',
+  site: 'www.italomarsili.com.br',
+  short_function: 'PSIQUIATRA',
+  function: 'PSIQUIATRA',
+  position: 2,
   international: false
 )
 
@@ -53,7 +65,7 @@ Speaker.create(
   twitter: 'erikneves',
   short_function: 'CLÍNICO GERAL',
   function: 'CLÍNICO GERAL',
-  position: 2,
+  position: 3,
   international: false
 )
 
@@ -65,42 +77,31 @@ Speaker.create(
   twitter: 'drjosenetomg',
   short_function: 'NEFROLOGISTA',
   function: 'CLÍNICO GERAL E NEFROLOGISTA',
-  position: 3,
-  international: false
-)
-
-Speaker.create(
-  name: 'RAFAEL LUND',
-  about: "Rafa Lund é palestrante, bacharel em Educação Física pela Universidade Federal do Rio de Janeiro (UFRJ), Mestre em Ciências do Desporto pela UTAD/Portugal, proprietário da Lund Trainers (RJ) e Personal Trainer há quase 15 anos.<br><br>Já atuou na preparação física de atletas de diversas modalidades, realizou Pesquisas Científicas e tem dado cursos e palestras em todo Brasil sobre como reunir Teoria e Prática no Treinamento.<br><br>Como Personal Trainer desde 2006, tem atendido executivos, atletas e atrizes - como Deborah Secco, Flávia Alessandra e Juliana Paes.",
-  image: 'rafael-lund@2x.png',
-  instagram: 'rafalund',
-  twitter: 'rafalund',
-  short_function: 'EDUCADOR FÍSICO',
-  function: 'EDUCADOR FÍSICO, PERSONAL TRAINER E EMPREENDEDOR',
   position: 4,
   international: false
 )
 
 Speaker.create(
-  name: 'LETICIA VASCONCELOS',
-  about: "Letícia é licenciada em educação física pela Universidade de Mogi as Cruzes (UMC) e especializada em fisiologia do exercício e pilates. Atua há 6 anos com dor crônica, atuando com reorganização postural e do movimento, condicionamento e reabilitação de pacientes com dores crônicas, lesões musculoesqueléticas, fibromialgia, prevenção de dores, promovendo o retorno do indivíduo às atividades físicas diárias e prática esportiva.",
-  instagram: 'leticiallos',
-  site: 'www.programa7x4.com.br',
-  image: 'leticia-vasconcelos@2x.png',
-  short_function: 'EDUCADORA FÍSICA',
-  function: 'EDUCADORA FÍSICA',
+  name: 'JANAINA KOENEN',
+  about: "Endocrinologista, especialista em diabetes, membro titular da Sociedade Brasileira de Endocrinologia e Metabologia da Sociedade Brasileira de Diabetes. Mestre em Inovação Tecnológica e Propriedade Intelectual pela Universidade Federal de Minas Gerais (UFMG). Professora da Pós Graduação em low carb da Universidade Univiçosa. Trabalhou muitos anos com pacientes diabéticos amputados e foi preceptora do ambulatório de Diabetes tipo 1 do Hospital das Clínicas da UFMG. Estudiosa do estilo de vida Paleolítica e das dietas Low carb, Cetogênica e Carnívora. Tem como missão prevenir e tratar a síndrome metabólica através do estilo de vida com ênfase em comida de verdade.",
+  image: 'janaina@2x.png',
+  instagram: 'janainaendocrino', 
+  site: 'www.janainakoenen.com.br',
+  short_function: 'ENDOCRINOLOGISTA',
+  function: 'ENDOCRINOLOGISTA',
   position: 5,
   international: false
 )
 
 Speaker.create(
-  name: 'RENATA CALIXTO',
-  about: "Renata Calixto é fisioterapeuta, professora, palestrante e eterna estudante. Celíaca que descobriu a saúde após embarcar no estilo de vida saudável, baseado em comida de verdade. Fez mestrado em Ciências do Exercício e do Esporte (UERJ), é pós-graduada em Fisiologia do Exercício e Treinamento Resistido: na saúde, na doença e no envelhecimento (Faculdade de Medicina da USP),também pós-graduada em Reabilitação e Treinamento (Instituto de Ortopedia e Traumatologia do Hospital das Clínicas USP). Além disso é moderadora no grupo de Facebook Viva Sem Glúten, diretora de comunicação da Associação de Celíacos do Rio de Janeiro (ACELBRA - RJ) e proprietária e administradora do site Vivencie Saúde.",
-  image: 'renata-calixto@2x.png',
-  instagram: 're.calixto',
-  site: 'www.vivenciesaude.com.br',
-  short_function: 'FISIOTERAPEUTA',
-  function: 'FISIOTERAPEUTA',
+  name: 'ALEXANDRE FELDMAN',
+  about: "Dr. Alexandre Feldman é médico clinico geral em São Paulo e autor de vários livros sobre enxaqueca e dor de cabeça. Um deles foi um dos primeiros voltados exclusivamente para médicos, sobre os vários tipos de dor de cabeça crônica, em português (“Cefaleias Primárias – Diagnóstico e Tratamento” Editora Artes Médicas, 1995). Foi membro ativo da American Headache Society durante 23 anos, entre 1992 e 2015. Possui 30 anos de experiência clínica.  É também autor do livro “Enxaqueca – Só Tem Quem Quer”. É entusiasta do estilo de vida saudável aliada aos tratamentos menos agressivos possíveis, tendo sido co-autor do livro “Life Management”, publicado fora do Brasil. Dedica-se exclusivamente ao seu consultório, seus estudos e sua família (a esposa culinarista Pat Feldman e dois filhos).",
+  image: 'alexandre@2x.png',
+  site: 'www.enxaqueca.com.br',
+  instagram: 'enxaqueca',
+  twitter: 'enxaqueca',
+  short_function: 'CLÍNICO GERAL',
+  function: 'CLÍNICO GERAL',
   position: 6,
   international: false
 )
@@ -117,6 +118,54 @@ Speaker.create(
 )
 
 Speaker.create(
+  name: 'DJULYE MARQUATO',
+  about: "Nutricionista clínica com foco em dieta baseada em comida de verdade, e experiência em emagrecimento e doenças crônicas não transmissíveis, e também idealizadora de cursos online de emagrecimento saudável. Acredita na construção dos pilares de um estilo de vida saudável por meio da alimentação, movimento, emoções e hábitos salutares no dia a dia, tem na jovialidade profissional uma perspicácia sem precedentes.",
+  image: 'djulye@2x.png',
+  instagram: 'djulye',
+  twitter: 'djulye_',
+  short_function: 'NUTRICIONISTA',
+  function: 'NUTRICIONISTA',
+  position: 8,
+  international: false
+)
+
+Speaker.create(
+  name: 'RAFAEL LUND',
+  about: "Rafa Lund é palestrante, bacharel em Educação Física pela Universidade Federal do Rio de Janeiro (UFRJ), Mestre em Ciências do Desporto pela UTAD/Portugal, proprietário da Lund Trainers (RJ) e Personal Trainer há quase 15 anos.<br><br>Já atuou na preparação física de atletas de diversas modalidades, realizou Pesquisas Científicas e tem dado cursos e palestras em todo Brasil sobre como reunir Teoria e Prática no Treinamento.<br><br>Como Personal Trainer desde 2006, tem atendido executivos, atletas e atrizes - como Deborah Secco, Flávia Alessandra e Juliana Paes.",
+  image: 'rafael-lund@2x.png',
+  instagram: 'rafalund',
+  twitter: 'rafalund',
+  short_function: 'EDUCADOR FÍSICO',
+  function: 'EDUCADOR FÍSICO, PERSONAL TRAINER E EMPREENDEDOR',
+  position: 9,
+  international: false
+)
+
+Speaker.create(
+  name: 'LETICIA VASCONCELOS',
+  about: "Letícia é licenciada em educação física pela Universidade de Mogi as Cruzes (UMC) e especializada em fisiologia do exercício e pilates. Atua há 6 anos com dor crônica, atuando com reorganização postural e do movimento, condicionamento e reabilitação de pacientes com dores crônicas, lesões musculoesqueléticas, fibromialgia, prevenção de dores, promovendo o retorno do indivíduo às atividades físicas diárias e prática esportiva.",
+  instagram: 'leticiallos',
+  site: 'www.programa7x4.com.br',
+  image: 'leticia-vasconcelos@2x.png',
+  short_function: 'EDUCADORA FÍSICA',
+  function: 'EDUCADORA FÍSICA',
+  position: 10,
+  international: false
+)
+
+Speaker.create(
+  name: 'RENATA CALIXTO',
+  about: "Renata Calixto é fisioterapeuta, professora, palestrante e eterna estudante. Celíaca que descobriu a saúde após embarcar no estilo de vida saudável, baseado em comida de verdade. Fez mestrado em Ciências do Exercício e do Esporte (UERJ), é pós-graduada em Fisiologia do Exercício e Treinamento Resistido: na saúde, na doença e no envelhecimento (Faculdade de Medicina da USP),também pós-graduada em Reabilitação e Treinamento (Instituto de Ortopedia e Traumatologia do Hospital das Clínicas USP). Além disso é moderadora no grupo de Facebook Viva Sem Glúten, diretora de comunicação da Associação de Celíacos do Rio de Janeiro (ACELBRA - RJ) e proprietária e administradora do site Vivencie Saúde.",
+  image: 'renata-calixto@2x.png',
+  instagram: 're.calixto',
+  site: 'www.vivenciesaude.com.br',
+  short_function: 'FISIOTERAPEUTA',
+  function: 'FISIOTERAPEUTA',
+  position: 11,
+  international: false
+)
+
+Speaker.create(
   name: 'PATRICIA TASSINARI',
   about: "Patrícia DI Giaimo Tassinari é Médica Vetenária especialista em doenças metabólicas em cães e gatos. Reside e trabalha na região de Stuttgart (Alemanha). Membro da plataforma de cursos voltados à saude Basis Plena como Health Coach e Veterinária.<br><br>Com a mudança para a Europa, menos tempo de trabalho e tempo livre sobrando, começou a se dedicar ao desenvolvimento pessoal, iniciando cursos de PNL e coaching na Inglaterra e Alemanha. Em 2008, iniciando interesse na área de saúde e alimentação, concluiu um curso de paleo coaching na Áustria que a levou a se interessar pelo estilo low carb e comida de verdade.<br><br>Atua desde 2010 na área de Desenvolvimento pessoal ( health e personal coach) em conjunto com a clínica veterinária, suas duas paixões.<br><br>Depois de adotar esse estilo de vida, eliminou em 9 meses 54kg, reverteu doenças e deixou remédios de uso contínuo. Continua seguindo low carb há mais de 8 anos.<br><br>Em 2017 concluiu curso de mentoring na Alemanha e de coach com Geronimo Tehlm para qualificação brasileira, concluindo varias graduações ao longo dos últimos 5 anos, hoje presta consultoria presencial e online, ajudando e assessorando mais de 1.500 pessoas nesses últimos 2 anos.<br><br>Autora dos livros  Pet Forte (2015), Mude sua Mente Mude Sua Vida (2017) e agora também uma das criadoras da Plataforma multidisciplinar de cursos online Basis Plena (2018).",
   image: 'patricia@2x.png',
@@ -124,19 +173,7 @@ Speaker.create(
   site: 'www.basisplena.com.br',
   short_function: 'HEALTH COACH',
   function: 'MASTER HEALTH COACH, ESCRITORA, MÉDICA VETERINÁRIA E EMPREENDEDORA',
-  position: 8,
-  international: false
-)
-
-Speaker.create(
-  name: 'JANAINA KOENEN',
-  about: "Endocrinologista, especialista em diabetes, membro titular da Sociedade Brasileira de Endocrinologia e Metabologia da Sociedade Brasileira de Diabetes. Mestre em Inovação Tecnológica e Propriedade Intelectual pela Universidade Federal de Minas Gerais (UFMG). Professora da Pós Graduação em low carb da Universidade Univiçosa. Trabalhou muitos anos com pacientes diabéticos amputados e foi preceptora do ambulatório de Diabetes tipo 1 do Hospital das Clínicas da UFMG. Estudiosa do estilo de vida Paleolítica e das dietas Low carb, Cetogênica e Carnívora. Tem como missão prevenir e tratar a síndrome metabólica através do estilo de vida com ênfase em comida de verdade.",
-  image: 'janaina@2x.png',
-  instagram: 'janainaendocrino', 
-  site: 'www.janainakoenen.com.br',
-  short_function: 'ENDOCRINOLOGISTA',
-  function: 'ENDOCRINOLOGISTA',
-  position: 9,
+  position: 12,
   international: false
 )
 
@@ -147,19 +184,7 @@ Speaker.create(
   instagram: 'dra_annaflavia', 
   short_function: 'ZOOTECNISTA',
   function: 'ZOOTECNISTA',
-  position: 10,
-  international: false
-)
-
-Speaker.create(
-  name: 'DJULYE MARQUATO',
-  about: "Nutricionista clínica com foco em dieta baseada em comida de verdade, e experiência em emagrecimento e doenças crônicas não transmissíveis, e também idealizadora de cursos online de emagrecimento saudável. Acredita na construção dos pilares de um estilo de vida saudável por meio da alimentação, movimento, emoções e hábitos salutares no dia a dia, tem na jovialidade profissional uma perspicácia sem precedentes.",
-  image: 'djulye@2x.png',
-  instagram: 'djulye',
-  twitter: 'djulye_',
-  short_function: 'NUTRICIONISTA',
-  function: 'NUTRICIONISTA',
-  position: 11,
+  position: 13,
   international: false
 )
 

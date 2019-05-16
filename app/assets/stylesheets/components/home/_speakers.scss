@@ -331,3 +331,13 @@ section.speakers {
     }
   }
 }
+
+@media screen and (min-width: 768px) {
+  section.speakers {
+    .speaker {
+      &.-victor-sorrentino {
+        margin-left: .8em;
+      }
+    }
+  }
+}

@@ -51,7 +51,7 @@
       <% @speakers.each do |speaker| %>
         <div class="col-md-3 col-6 col-sm-6 d-flex justify-content-center">
           <a href="/palestrantes/<%= speaker.slug %>">
-            <div class="speaker">
+            <div class="speaker <%= '-' + speaker.slug %>">
               <%= image_tag speaker.image, class: 'image-responsive' %>
               <div class="name <%= '-adjust-mobile' if speaker.name.size > 13 %>"><%= speaker.name %></div>
             </div>
