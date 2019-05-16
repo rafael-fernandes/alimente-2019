@@ -12,10 +12,16 @@
   <td><%= upgrade_request.e_ticket %></td>
 
   <td>
-    <% if upgrade_request.upgrade_to == 'gold_1_to_vip_1' %>
+    <% if upgrade_request.upgrade_to == 'gold_1_to_gold_2' %>
+      Gold 1 para Gold 2
+    <% elsif upgrade_request.upgrade_to == 'gold_1_to_vip_2' %>
       Gold 1 para VIP 1
     <% elsif upgrade_request.upgrade_to == 'gold_1_to_vip_2' %>
       Gold 1 para VIP 2
+    <% elsif upgrade_request.upgrade_to == 'gold_2_to_vip_2' %>
+      Gold 2 para VIP 1
+    <% elsif upgrade_request.upgrade_to == 'gold_2_to_vip_2' %>
+      Gold 2 para VIP 2
     <% end %>
   </td>
 

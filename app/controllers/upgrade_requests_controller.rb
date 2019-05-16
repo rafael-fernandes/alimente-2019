@@ -25,6 +25,6 @@ class UpgradeRequestsController < ApplicationController
   end
 
   def set_upgrade_to
-    @upgrade_to = [["Gold 1 para VIP 1", 0], ["Gold 1 para VIP 2", 1]]
+    @upgrade_to = [["Gold 1 para Gold 2", 0], ["Gold 1 para VIP 1", 1], ["Gold 1 para VIP 2", 2], ["Gold 2 para VIP 1", 3], ["Gold 2 para VIP 2", 4]]
   end
 end
