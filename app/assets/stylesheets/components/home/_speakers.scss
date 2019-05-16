@@ -111,19 +111,19 @@ section.speakers {
     &.-international {
       max-width: 236px;
       max-height: 236px;
-      background-color: $color-yellow;
+      background-color: $color-cyan;
 
       .name {
         font-size: 26px;
 
-        background-color: #FDC603;
+        background-color: $color-cyan;
       }
 
       &:hover {
-        background-color: $color-cyan;
+        background-color: $color-yellow;
         
         .name {
-          background-color: $color-cyan;
+          background-color: $color-yellow;
         }
       }
     }

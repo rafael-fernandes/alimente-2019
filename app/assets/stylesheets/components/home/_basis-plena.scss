@@ -1,36 +1,45 @@
 section.basis-plena {
-  padding: 2em 0;
+  padding: 4em 0;
   position: relative;
 
-  color: $color-white;
-  background-color: $color-green;
+  color: $color-brown;
+  background-color: $color-white;
 
   .content {
-    padding-left: 3em;
-
     .title {
       font-family: 'Dunbar Tall';
-      font-size: 26px;
+      font-size: 28px;
     }
   
     .description {
-      padding-top: 2em;
-      max-width: 700px;
+      padding-top: 2.5em;
+      max-width: 650px;
 
       a {
-        color: $color-white;
+        color: $color-brown;
       }
     }
     
     .btn {
       color: $color-white;
     }
+
+    .logos {
+      padding-top: 4em;
+      display: block;
+    }
+  }
+
+  .bg-about-project {
+    position: absolute;
+    right: 0;
+    bottom: 0;
   }
 }
 
 @media screen and (max-width: 768px) {
   section.basis-plena {
-    padding-bottom: 4em;
+    padding: 3em 0;
 
     .container {
       flex-direction: column-reverse;
@@ -39,16 +48,16 @@ section.basis-plena {
 
     .content {
       padding-left: initial;
-      padding-bottom: 3em;
 
       .title {
         font-size: 20px;
         line-height: 26px;
       }
-    }
 
-    .basis-plena {
-      width: 100%;
+      .logos {
+        padding-top: 2em;
+        width: 100%;
+      }
     }
   }
 }

@@ -1,23 +1,33 @@
 <section class="basis-plena">
-  <div class="container d-flex">
-    <%= image_tag 'basis-plena-logo@2x.png', class: 'basis-plena align-self-start' %>
-
+  <div class="container">
     <div class="content">
       <div class="title">
         O evento ALIMENTE apresenta à vocês nossa nova parceria.
       </div>
 
-      <div class="description">
+      <div class="description pb-2">
         Pensando em trazer sempre o melhor conteúdo, todos os inscritos do evento deste ano terão acesso às aulas exclusivas da plataforma Basis Plena. Você receberá na hora da compra um e-mail com todas as informações de acesso, fiquem atentos aos e-mails (caixa de spam).
         <br><br>
         A plataforma de ensino Basis Plena é um grupo de profissionais que de forma multidisciplinar quer fornecer a você uma vida plena e saudável, onde você poderá desenvolver as áreas de: nutrição, mente, físico e conhecimento para que você tenha uma vida de qualidade e que possa fazer escolhas melhores.
         <br><br>
         Não importa se o caso é emagrecimento ou a sua preciosa saúde, o objetivo é te proporcionar equilíbrio de vida e cuidado pleno.
         <br><br>
-        Conheça a Basis Plena, <strong><a href="http://www.basisplena.com.br" target="_blank">acesse aqui seu site</a></strong>.
+        <strong><a href="http://www.basisplena.com.br" target="_blank">Clique aqui</a></strong> para conhecer a plataforma Basis Plena.
       </div>
 
-      <a href="/users/sign_in" class="btn btn-warning mt-4">ACESSE O CURSO ONLINE DA BASIS PLENA</a>
+      <div class="d-none d-md-block">
+        <a href="/users/sign_in" class="btn btn-danger btn-lg mt-4">ACESSE O CURSO ONLINE DA BASIS PLENA</a>
+      </div>
+
+      <div class="d-block d-md-none">
+        <a href="/users/sign_in" class="btn btn-danger mt-4">ACESSE O CURSO ONLINE DA BASIS PLENA</a>
+      </div>
+
+      <%= image_tag 'logos-parceria@2x.png', class: 'logos' %>
     </div>
+  </div>
+
+  <div class="d-none d-md-block">
+    <%= image_tag 'bg-about-project@2x.png', class: 'bg-about-project' %>
   </div>
 </section>
