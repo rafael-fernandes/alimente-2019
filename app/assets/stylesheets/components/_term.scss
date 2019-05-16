@@ -1,8 +1,13 @@
 .term {
+  padding-bottom: 4em;
   min-height: 100vh;
   
   color: $color-white;
   background-color: $color-green;
+
+  .logo {
+    height: 70px;
+  }
 
   .content {
     font-size: 18px;
@@ -13,7 +18,15 @@
 @media screen and (min-width: 768px) {
   .term {
     .container {
-      width: 50%;
+      width: 60%;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .term {
+    h2 {
+      font-size: 28px;
     }
   }
 }
