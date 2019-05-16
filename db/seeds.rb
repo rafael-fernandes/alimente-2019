@@ -83,7 +83,7 @@ Speaker.create(
 
 Speaker.create(
   name: 'JANAINA KOENEN',
-  about: "Endocrinologista, especialista em diabetes, membro titular da Sociedade Brasileira de Endocrinologia e Metabologia da Sociedade Brasileira de Diabetes. Mestre em Inovação Tecnológica e Propriedade Intelectual pela Universidade Federal de Minas Gerais (UFMG). Professora da Pós Graduação em low carb da Universidade Univiçosa. Trabalhou muitos anos com pacientes diabéticos amputados e foi preceptora do ambulatório de Diabetes tipo 1 do Hospital das Clínicas da UFMG. Estudiosa do estilo de vida Paleolítica e das dietas Low carb, Cetogênica e Carnívora. Tem como missão prevenir e tratar a síndrome metabólica através do estilo de vida com ênfase em comida de verdade.",
+  about: "Endocrinologista, especialista em diabetes, membro titular da Sociedade Brasileira de Endocrinologia e Metabologia da Sociedade Brasileira de Diabetes. Mestre em Inovação Tecnológica e Propriedade Intelectual pela Universidade Federal de Minas Gerais (UFMG). Professora da Pós-graduação em low carb da Universidade Univiçosa. Trabalhou muitos anos com pacientes diabéticos amputados e foi preceptora do ambulatório de Diabetes tipo 1 do Hospital das Clínicas da UFMG. Estudiosa do estilo de vida Paleolítica e das dietas Low carb, Cetogênica e Carnívora. Tem como missão prevenir e tratar a síndrome metabólica através do estilo de vida com ênfase em comida de verdade.",
   image: 'janaina@2x.png',
   instagram: 'janainaendocrino', 
   site: 'www.janainakoenen.com.br',
