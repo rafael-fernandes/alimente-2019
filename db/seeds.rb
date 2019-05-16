@@ -40,7 +40,7 @@ Speaker.create(
   instagram: 'drvictorsorrentino',
   site: 'www.drvictorsorrentino.com.br',
   short_function: 'MÉDICO, ESCRITOR E PALESTRANTE',
-  function: 'MÉDICO, ESCRITOR E PALESTRANTES',
+  function: 'MÉDICO, ESCRITOR E PALESTRANTE',
   position: 1,
   international: false
 )
