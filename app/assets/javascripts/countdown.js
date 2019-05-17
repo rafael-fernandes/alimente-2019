@@ -34,31 +34,31 @@ $(document).on('turbolinks:load', function() {
   //   $(this).html(event.strftime('%M'));
   // });
 
-  $('.days .number').countdown('2019/04/27 00:01:00', function (event) {
+  $('.days .number').countdown('2019/05/17 21:00:00', function (event) {
     $(this).html(event.strftime('%D'));
   });
 
-  $('.hours .number').countdown('2019/04/27 00:01:00', function (event) {
+  $('.hours .number').countdown('2019/05/17 21:00:00', function (event) {
     $(this).html(event.strftime('%H'));
   });
 
-  $('.minutes .number').countdown('2019/04/27 00:01:00', function (event) {
+  $('.minutes .number').countdown('2019/05/17 21:00:00', function (event) {
     $(this).html(event.strftime('%M'));
   });
 
-  $('.seconds .number').countdown('2019/04/27 00:01:00', function (event) {
+  $('.seconds .number').countdown('2019/05/17 21:00:00', function (event) {
     $(this).html(event.strftime('%S'));
   });
 
-  $('.timer .hours').countdown('2019/04/27 00:01:00', function (event) {
+  $('.timer .hours').countdown('2019/05/17 21:00:00', function (event) {
     $(this).html(event.strftime('%H'));
   });
 
-  $('.timer .minutes').countdown('2019/04/27 00:01:00', function (event) {
+  $('.timer .minutes').countdown('2019/05/17 21:00:00', function (event) {
     $(this).html(event.strftime('%M'));
   });
 
-  $('.timer .seconds').countdown('2019/04/27 00:01:00', function (event) {
+  $('.timer .seconds').countdown('2019/05/17 21:00:00', function (event) {
     $(this).html(event.strftime('%S'));
   });
 });
