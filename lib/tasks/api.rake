@@ -26,10 +26,6 @@ namespace :api do
             term: false,
             admin: false
           )
-        else
-          user = User.find_by_email email
-          user.password = e_ticket
-          user.save
         end
       end
       
