@@ -48,7 +48,87 @@
 
   <div class="container">
     <div class="row national-speakers">
-      <% @speakers.each do |speaker| %>
+      <% @speakers[0..3].each do |speaker| %>
+        <div class="col-md-3 col-6 col-sm-6 d-flex justify-content-center">
+          <a href="/palestrantes/<%= speaker.slug %>">
+            <div class="speaker <%= '-' + speaker.slug %>">
+              <%= image_tag speaker.image, class: 'image-responsive' %>
+              <div class="name <%= '-adjust-mobile' if speaker.name.size > 13 %>"><%= speaker.name %></div>
+            </div>
+
+            <div class="short-function"><%= speaker.short_function %></div>
+          </a>
+        </div>
+      <% end %>
+
+      <% @speakers[4..4].each do |speaker| %>
+        <div class="col-md-4 col-6 col-sm-6 d-flex justify-content-end">
+          <a href="/palestrantes/<%= speaker.slug %>">
+            <div class="speaker <%= '-' + speaker.slug %>">
+              <%= image_tag speaker.image, class: 'image-responsive' %>
+              <div class="name <%= '-adjust-mobile' if speaker.name.size > 13 %>"><%= speaker.name %></div>
+            </div>
+
+            <div class="short-function"><%= speaker.short_function %></div>
+          </a>
+        </div>
+      <% end %>
+
+      <% @speakers[5..5].each do |speaker| %>
+        <div class="col-md-4 col-6 col-sm-6 d-flex justify-content-center">
+          <a href="/palestrantes/<%= speaker.slug %>">
+            <div class="speaker <%= '-' + speaker.slug %>">
+              <%= image_tag speaker.image, class: 'image-responsive' %>
+              <div class="name <%= '-adjust-mobile' if speaker.name.size > 13 %>"><%= speaker.name %></div>
+            </div>
+
+            <div class="short-function"><%= speaker.short_function %></div>
+          </a>
+        </div>
+      <% end %>
+
+      <% @speakers[6..6].each do |speaker| %>
+        <div class="col-md-4 col-6 col-sm-6 d-flex justify-content-start">
+          <a href="/palestrantes/<%= speaker.slug %>">
+            <div class="speaker <%= '-' + speaker.slug %>">
+              <%= image_tag speaker.image, class: 'image-responsive' %>
+              <div class="name <%= '-adjust-mobile' if speaker.name.size > 13 %>"><%= speaker.name %></div>
+            </div>
+
+            <div class="short-function"><%= speaker.short_function %></div>
+          </a>
+        </div>
+      <% end %>
+
+      <% @speakers[7..10].each do |speaker| %>
+        <div class="col-md-3 col-6 col-sm-6 d-flex justify-content-center">
+          <a href="/palestrantes/<%= speaker.slug %>">
+            <div class="speaker <%= '-' + speaker.slug %>">
+              <%= image_tag speaker.image, class: 'image-responsive' %>
+              <div class="name <%= '-adjust-mobile' if speaker.name.size > 13 %>"><%= speaker.name %></div>
+            </div>
+
+            <div class="short-function"><%= speaker.short_function %></div>
+          </a>
+        </div>
+      <% end %>
+
+      <div class="col-md-3 d-none d-md-block"></div>
+
+      <% @speakers[11..11].each do |speaker| %>
+        <div class="col-md-3 col-6 col-sm-6 d-flex justify-content-center">
+          <a href="/palestrantes/<%= speaker.slug %>">
+            <div class="speaker <%= '-' + speaker.slug %>">
+              <%= image_tag speaker.image, class: 'image-responsive' %>
+              <div class="name <%= '-adjust-mobile' if speaker.name.size > 13 %>"><%= speaker.name %></div>
+            </div>
+
+            <div class="short-function"><%= speaker.short_function %></div>
+          </a>
+        </div>
+      <% end %>
+
+      <% @speakers[12..12].each do |speaker| %>
         <div class="col-md-3 col-6 col-sm-6 d-flex justify-content-center">
           <a href="/palestrantes/<%= speaker.slug %>">
             <div class="speaker <%= '-' + speaker.slug %>">
