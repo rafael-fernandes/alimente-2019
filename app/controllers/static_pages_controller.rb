@@ -2,7 +2,7 @@ class StaticPagesController < ApplicationController
   layout 'agreement', only: :agreement_term
 
   def home
-    @speakers = Speaker.national.order(position: :asc)
+    @speakers = Speaker.national.shuffle
     @international_speakers = Speaker.international.order(position: :asc)
   end
 

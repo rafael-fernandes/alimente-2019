@@ -1,13 +1,17 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
-
 Speaker.destroy_all
 Video.destroy_all
+
+Speaker.create(
+  name: 'ERIC WESTMAN',
+  about: "",
+  image: 'eric-westman@2x.png',
+  instagram: 'ecwestman',
+  twitter: 'drericwestman',
+  short_function: 'MÉDICO',
+  function: "Médico especialista certificado em Medicina da Obesidade e em Medicina Interna, Professor da Univerdidade de Duke e Autor de livros best seller.".upcase,
+  position: 1,
+  international: true
+)
 
 Speaker.create(
   name: 'LUIS VILLASEÑOR',
@@ -19,7 +23,7 @@ Speaker.create(
   facebook: 'ketogains',
   short_function: 'NUTRICIONISTA E EDUCADOR FÍSICO',
   function: 'NUTRICIONISTA E EDUCADOR FÍSICO',
-  position: 1,
+  position: 2,
   international: true
 )
 
@@ -29,7 +33,7 @@ Speaker.create(
   image: 'amy-berge@2x.png',
   short_function: 'NUTRICIONISTA',
   function: 'NUTRICIONISTA',
-  position: 2,
+  position: 3,
   international: true
 )
 
