@@ -192,6 +192,19 @@ Speaker.create(
   international: false
 )
 
+Speaker.create(
+  name: 'GUILHEME TAKASSI',
+  about: "Médico formado pela Universidade Federal de São Paulo - Escola Paulista de Medicina. Trabalha há alguns anos voltado para a otimização da saúde física como base para a construção da saúde mental, utilizando como estratégia o desenvolvimento pessoal e o autoconhecimento. Tem residências médicas em cirurgia geral e cirurgia plástica na mesma instituição que se formou, é membro da Sociedade Brasileira de Cirurgia Plástica e trabalha com medicinas orientais (japonesa, chinesa e ayurvédica) desde quando se formou na faculdade de medicina.",
+  image: 'guilherme-takassi@2x.png',
+  instagram: 'gftakassi',
+  twitter: 'gftakassi',
+  site: 'www.gftakassi.com',
+  short_function: 'CIRURGIÃO GERAL',
+  function: 'CIRURGIÃO GERAL',
+  position: 14,
+  international: false
+)
+
 Video.create(
   number: 1,
   title: 'Desenvolvimento global e estilo de vida saudável',
