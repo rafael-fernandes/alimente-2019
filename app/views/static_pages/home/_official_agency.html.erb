@@ -1,0 +1,21 @@
+<div class="container py-5">
+  <div class="d-flex justify-content-between align-items-center flex-wrap">
+    <div class="d-none d-md-block">
+      <%= image_tag 'agencia-oficial@2x.png' %>
+    </div>
+
+    <div class="d-block d-md-none">
+      <%= image_tag 'agencia-oficial@2x.png', class: 'w-100' %>
+    </div>
+
+    <%= link_to 'https://otcturismo.esferaplus.com/', target: '_blank' do %>
+      <div class="d-none d-md-block">
+        <%= image_tag 'otc-turismo@2x.png' %>
+      </div>
+
+      <div class="d-block d-md-none">
+        <%= image_tag 'otc-turismo@2x.png', class: 'w-100 mt-5' %>
+      </div>
+    <% end %>
+  </div>
+</div>
