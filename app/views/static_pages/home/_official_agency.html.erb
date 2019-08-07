@@ -1,21 +1,35 @@
-<div class="container py-5">
-  <div class="d-flex justify-content-between align-items-center flex-wrap">
-    <div class="d-none d-md-block">
-      <%= image_tag 'agencia-oficial@2x.png' %>
-    </div>
+<section class="official-agency">
+  <div class="container py-5">
+    <div class="d-flex justify-content-between align-items-center flex-wrap">
+      <div class="row">
+        <div class="col-md-6">
+          <h1 class="title">Agência oficial do Evento ALIMENTE</h1>
 
-    <div class="d-block d-md-none">
-      <%= image_tag 'agencia-oficial@2x.png', class: 'w-100' %>
-    </div>
+          <p class="mt-4">
+            O Evento ALIMENTE junto com a sua parceira oficial - <strong>OTC Turismo</strong> trazem mais uma novidade incrível para todos!
+          </p>
 
-    <%= link_to 'https://otcturismo.esferaplus.com/', target: '_blank' do %>
-      <div class="d-none d-md-block">
-        <%= image_tag 'otc-turismo@2x.png' %>
+          <p>
+            Os inscritos agora possuem:
+          </p>
+
+          <ul>
+            <li>15% de desconto nas tarifas de passagens aéreas na Gol</li>
+
+            <li>17% de desconto nas tarifas de passagens aéreas na Azul</li>
+          </ul>
+
+          <%= link_to 'ADQUIRA JÁ SUA PASSAGEM', 'https://otcturismo.esferaplus.com/', class: 'btn btn-success mt-3', target: '_blank' %>
+        </div>
+
+        <div class="col-md-6 d-flex">
+          <div class="ml-auto">
+            <%= link_to 'https://otcturismo.esferaplus.com/', target: '_blank' do %>
+              <%= image_tag 'otc-turismo@2x.png', class: 'agency-logo w-100 ml-auto' %>
+            <% end %>
+          </div>
+        </div>
       </div>
-
-      <div class="d-block d-md-none">
-        <%= image_tag 'otc-turismo@2x.png', class: 'w-100 mt-5' %>
-      </div>
-    <% end %>
+    </div>
   </div>
-</div>
+</section>
