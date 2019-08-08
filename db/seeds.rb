@@ -199,8 +199,8 @@ Speaker.create(
   instagram: 'gftakassi',
   twitter: 'gftakassi',
   site: 'www.gftakassi.com',
-  short_function: 'CIRURGIÃO GERAL',
-  function: 'CIRURGIÃO GERAL',
+  short_function: 'MÉDICO',
+  function: 'MÉDICO',
   position: 14,
   international: false
 )
