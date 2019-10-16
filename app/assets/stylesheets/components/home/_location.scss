@@ -18,10 +18,10 @@ section.location {
 
   .local {
     margin-top: 3rem;
-    padding: .5rem .75rem;
+    padding: .75rem .75rem 1rem;
     display: inline-block;
-    font-size: 50px;
-    line-height: 65px;
+    font-size: 35px;
+    line-height: 40px;
     background-color: $color-yellow;
   }
 
@@ -70,8 +70,9 @@ section.location {
     }
 
     .local {
-      font-size: 32px;
-      line-height: 35px;
+      text-align: center;
+      font-size: 25px;
+      line-height: 30px;
     }
 
     .state {
