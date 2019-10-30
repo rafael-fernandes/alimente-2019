@@ -27,9 +27,9 @@ namespace :api do
           term: false,
           admin: false
         )
-      end
 
-      puts "Criado participante #{email} - #{e_ticket}"
+        puts "Criado participante #{email} - #{e_ticket}"
+      end
     end
   end
 end
