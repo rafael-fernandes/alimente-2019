@@ -26,8 +26,44 @@
 
 <%= render 'static_pages/home/location' %>
 
+<div class="modal modal-changes" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">
+          COMUNICADO: o local do evento mudou.
+        </h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p class="mr-5 ml-5 mt-3 pb-3">
+          Queridos inscritos,
+          <br><br>
+          Temos uma informação muito importante para você.
+          <br><br>
+          Vocês sabem que o Evento ALIMENTE não recebe patrocínio de grandes empresas e que depende de muito trabalho coletivo e das vendas de sua bilheteria para se manter de pé.
+          <br><br>
+          Por isso fizemos uma mudança no local do evento. Será num espaço extremamente aconchegante, estruturado e que não afetará em nada a qualidade do evento.
+          <br><br>
+          Mas calma! O novo local está pertinho do anterior – cerca de 1 km, e não afetará em nada a sua logística de hospedagem. Em todo caso, disponibilizaremos vans para auxiliar no translado do JK ao novo local, em horários fixos de saída e de retorno, para quem achar necessário.
+          <br><br>
+          O evento será realizado no Teatro D, na Rua João Cachoeira, 899, Piso G2, Itaim Bibi, com acesso pelo Extra.
+          <br><br>
+          Os palestrantes e a programação estão confirmados e permanecem inalterados.
+          <br><br>
+          O Evento ALIMENTE está chegando e será incrível! Estamos todos esperando ansiosamente por este fim de semana. Nos encontramos lá!
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
 <script>
   $(document).on('turbolinks:load', function() {
+    $('.modal-changes').modal('show');
+
     var image = document.getElementsByClassName('parallax-image');
     new simpleParallax(image);
   });
