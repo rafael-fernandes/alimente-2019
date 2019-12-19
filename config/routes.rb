@@ -15,12 +15,18 @@ Rails.application.routes.draw do
 
   get 'agreement_term' => 'static_pages#agreement_term'
 
+  get 'select' => 'static_pages#select'
+
   resources :upgrade_requests, only: [:create]
 
   resources :users, only: :update
 
   namespace :basis_plena do
     resources :videos, only: [:index, :show]
+  end
+
+  namespace :event do
+    resources :lectures, only: [:index, :show]
   end
 
   namespace :admin do

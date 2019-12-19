@@ -283,5 +283,159 @@
 #   )
 # end
 
-u = User.find_by_email 'f.mardegam@simderma.com.br'
-u.update_columns(email: 'fernanda.enfermeiradermato@gmail.com')
+# u = User.find_by_email 'f.mardegam@simderma.com.br'
+# u.update_columns(email: 'fernanda.enfermeiradermato@gmail.com')
+
+Lecture.destroy_all
+
+Lecture.create(
+  day: 'saturday',
+  number: 1,
+  name: 'A dieta cetogênica: como fazê-la corretamente para uma recomposição corporal ideal',
+  speaker: 'Luis Villaseñor',
+  video_url: 'VgJR1bC3gYQ'
+)
+
+Lecture.create(
+  day: 'saturday',
+  number: 2,
+  name: 'Proteínas e saúde renal: uma análise baseada em evidências',
+  speaker: 'José Neto',
+  video_url: 'VgJR1bC3gYQ'
+)
+
+Lecture.create(
+  day: 'saturday',
+  number: 3,
+  name: 'Jejum e treinamento: na prática a teoria é outra',
+  speaker: 'Rafael Lund',
+  video_url: 'VgJR1bC3gYQ'
+)
+
+Lecture.create(
+  day: 'saturday',
+  number: 4,
+  name: 'Um estilo de vida saudável, começa com o que você come',
+  speaker: 'Djulye Marquato',
+  video_url: 'VgJR1bC3gYQ'
+)
+
+Lecture.create(
+  day: 'saturday',
+  number: 5,
+  name: 'Vocé é aquilo que come? O papel do trato digestivo para uma vida saudável',
+  speaker: 'Ana Martha',
+  video_url: 'VgJR1bC3gYQ'
+)
+
+Lecture.create(
+  day: 'saturday',
+  number: 6,
+  name: 'Produção animal e meio ambiente: mitos, entraves e papel do consumidor',
+  speaker: 'Anna Flávia',
+  video_url: 'VgJR1bC3gYQ'
+)
+
+Lecture.create(
+  day: 'saturday',
+  number: 7,
+  name: 'As evidências da relação entre metabolismo e transtornos mentais mais comuns',
+  speaker: 'Victor Sorrentino',
+  video_url: 'VgJR1bC3gYQ'
+)
+
+Lecture.create(
+  day: 'saturday',
+  number: 8,
+  name: 'Meditação, a ciência por trás da espiritualidade',
+  speaker: 'Guilherme Takassi',
+  video_url: 'VgJR1bC3gYQ'
+)
+
+Lecture.create(
+  day: 'saturday',
+  number: 9,
+  name: 'Painel com convidados',
+  speaker: 'Todos do dia',
+  video_url: 'VgJR1bC3gYQ'
+)
+
+Lecture.create(
+  day: 'sunday',
+  number: 1,
+  name: 'Terapias cetogênicas para distúrbios neurológicos e neurodegenerativos',
+  speaker: 'Amy Berger',
+  video_url: 'VgJR1bC3gYQ'
+)
+
+Lecture.create(
+  day: 'sunday',
+  number: 2,
+  name: 'Diabetes tipo 2 é reversível com dieta',
+  speaker: 'Janaina Koenen',
+  video_url: 'VgJR1bC3gYQ'
+)
+
+Lecture.create(
+  day: 'sunday',
+  number: 3,
+  name: 'Tudo o que você precisa saber sobre glúten: afecções músculo-esqueléticas na sensibilidade ao glúten e doença celíaca',
+  speaker: 'Renata Calixto',
+  video_url: 'VgJR1bC3gYQ'
+)
+
+Lecture.create(
+  day: 'sunday',
+  number: 4,
+  name: 'Dor crônica: conceito, implicações, impacto na qualidade de vida e como o exercício físico pode auxiliar',
+  speaker: 'Letícia Vasconcelos',
+  video_url: 'VgJR1bC3gYQ'
+)
+
+Lecture.create(
+  day: 'sunday',
+  number: 5,
+  name: 'Ajustando seu painel de controle: como determinar dominância, controle e ter planejamento no seu processo de emagrecimento',
+  speaker: 'Patrícia Tassinari',
+  video_url: 'VgJR1bC3gYQ'
+)
+
+Lecture.create(
+  day: 'sunday',
+  number: 6,
+  name: 'Enxaqueca: uma abordagem pelo estilo de vida',
+  speaker: 'Alexandre Feldman',
+  video_url: 'VgJR1bC3gYQ'
+)
+
+Lecture.create(
+  day: 'sunday',
+  number: 7,
+  name: 'A ciência e a prática de dietas lowcarb e cetogênica',
+  speaker: 'Eric Westman',
+  video_url: 'VgJR1bC3gYQ'
+)
+
+Lecture.create(
+  day: 'sunday',
+  number: 8,
+  name: 'Óleos vegetais: a raiz de todos os males?',
+  speaker: 'Erik Neves',
+  video_url: 'VgJR1bC3gYQ'
+)
+
+Lecture.create(
+  day: 'sunday',
+  number: 9,
+  name: '-',
+  speaker: 'Ítalo Marsili',
+  video_url: 'VgJR1bC3gYQ'
+)
+
+Lecture.create(
+  day: 'sunday',
+  number: 9,
+  name: 'Painel com convidados',
+  speaker: 'Todos do dia',
+  video_url: 'VgJR1bC3gYQ'
+)

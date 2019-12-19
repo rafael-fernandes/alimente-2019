@@ -1,0 +1,19 @@
+.lectures {
+  padding: 3em 0;
+
+  .day-of-week {
+    padding: .75rem 0;
+    color: $color-green;
+    text-align: center;
+    border: 2px solid $color-green;
+
+    &.-active {
+      color: $color-orange;
+      border-color: $color-orange;
+    }
+    
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

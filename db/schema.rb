@@ -10,10 +10,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_05_11_173042) do
+ActiveRecord::Schema.define(version: 2019_12_19_103434) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "lectures", force: :cascade do |t|
+    t.string "video_url"
+    t.string "day"
+    t.string "name"
+    t.integer "number"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "speaker"
+  end
 
   create_table "speakers", force: :cascade do |t|
     t.string "name"

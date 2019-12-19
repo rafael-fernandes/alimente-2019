@@ -1,0 +1,91 @@
+<div class="basis-plena">
+  <div class="header">
+    <div class="container h-100 d-flex justify-content-center">
+      <div class="title align-self-center">
+        EVENTO ONLINE
+      </div>
+    </div>
+  </div>
+
+  <% if notice %>
+    <div class="alert alert-success">
+      <div class="container">
+        <%= notice %>
+
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+    </div>
+  <% end %>
+
+  <div class="container lectures">
+    <div class="row pt-2 pb-4">
+      <div class="col-md-6 col-6 col-sm-6">
+        <div class="day-of-week saturday -active">
+          <h2>SÁBADO</h2>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-6 col-sm-6">
+        <div class="day-of-week sunday">
+          <h2>DOMINGO</h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="saturday-lectures pt-4">
+      <div class="table-responsive">
+        <table class="table">
+          <thead class="thead-light">
+            <tr>
+              <th>Título</th>
+              <th>Palestrante</th>
+              <th>Assistir</th>
+              <th></th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <% @lectures.saturday.each do |lecture| %>
+              <tr>
+                <td>
+                  <strong><%= lecture.name %></strong>
+                </td>
+                <td><%= lecture.speaker %></td>
+                <td align="right"><%= link_to 'ASSISTIR PALESTRA', event_lecture_path(lecture), class: 'btn btn-warning btn-sm' %></td>
+              </tr>
+            <% end %>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="sunday-lectures d-none pt-4">
+      <div class="table-responsive">
+        <table class="table">
+          <thead class="thead-light">
+            <tr>
+              <th>Título</th>
+              <th>Palestrante</th>
+              <th>Assistir</th>
+              <th></th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <% @lectures.sunday.each do |lecture| %>
+              <tr>
+                <td>
+                  <strong><%= lecture.name %></strong>
+                </td>
+                <td><%= lecture.speaker %></td>
+                <td align="right"><%= link_to 'ASSISTIR PALESTRA', event_lecture_path(lecture), class: 'btn btn-warning btn-sm' %></td>
+              </tr>
+            <% end %>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

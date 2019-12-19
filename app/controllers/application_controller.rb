@@ -6,13 +6,13 @@ class ApplicationController < ActionController::Base
     if current_user.admin?
       admin_upgrade_requests_path
     else
-      basis_plena_videos_path
+      select_path
     end
   end
 
   def agreement_term
     if user_signed_in? and not(current_user.admin?)
-      if controller_path == 'basis_plena/videos'
+      if controller_path == 'basis_plena/videos' or controller_path == 'event/lectures'
         @user = current_user
 
         unless current_user.term

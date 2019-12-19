@@ -1,6 +1,8 @@
 class StaticPagesController < ApplicationController
   layout 'agreement', only: :agreement_term
 
+  before_action :authenticate_user!, only: :select
+
   def home
     @speakers = Speaker.national.shuffle
     @international_speakers = Speaker.international.order(position: :asc)
@@ -13,6 +15,9 @@ class StaticPagesController < ApplicationController
   end
 
   def faq
+  end
+
+  def select
   end
 
   def agreement_term
