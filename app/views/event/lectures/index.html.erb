@@ -19,72 +19,74 @@
     </div>
   <% end %>
 
-  <div class="container lectures">
-    <div class="row pt-2 pb-4">
-      <div class="col-md-6 col-6 col-sm-6">
-        <div class="day-of-week saturday -active">
-          <h2>SÁBADO</h2>
+  <div class="container">
+    <div class="lectures">
+      <div class="row pt-2 pb-4">
+        <div class="col-md-6 col-6 col-sm-6">
+          <div class="day-of-week saturday -active">
+            <h2>SÁBADO</h2>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-6 col-sm-6">
+          <div class="day-of-week sunday">
+            <h2>DOMINGO</h2>
+          </div>
         </div>
       </div>
 
-      <div class="col-md-6 col-6 col-sm-6">
-        <div class="day-of-week sunday">
-          <h2>DOMINGO</h2>
+      <div class="saturday-lectures pt-4">
+        <div class="table-responsive">
+          <table class="table">
+            <thead class="thead-light">
+              <tr>
+                <th>Título</th>
+                <th>Palestrante</th>
+                <th>Assistir</th>
+                <th></th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <% @lectures.saturday.each do |lecture| %>
+                <tr>
+                  <td>
+                    <strong><%= lecture.name %></strong>
+                  </td>
+                  <td><%= lecture.speaker %></td>
+                  <td align="right"><%= link_to 'ASSISTIR PALESTRA', event_lecture_path(lecture), class: 'btn btn-warning btn-sm' %></td>
+                </tr>
+              <% end %>
+            </tbody>
+          </table>
         </div>
       </div>
-    </div>
 
-    <div class="saturday-lectures pt-4">
-      <div class="table-responsive">
-        <table class="table">
-          <thead class="thead-light">
-            <tr>
-              <th>Título</th>
-              <th>Palestrante</th>
-              <th>Assistir</th>
-              <th></th>
-            </tr>
-          </thead>
-
-          <tbody>
-            <% @lectures.saturday.each do |lecture| %>
+      <div class="sunday-lectures d-none pt-4">
+        <div class="table-responsive">
+          <table class="table">
+            <thead class="thead-light">
               <tr>
-                <td>
-                  <strong><%= lecture.name %></strong>
-                </td>
-                <td><%= lecture.speaker %></td>
-                <td align="right"><%= link_to 'ASSISTIR PALESTRA', event_lecture_path(lecture), class: 'btn btn-warning btn-sm' %></td>
+                <th>Título</th>
+                <th>Palestrante</th>
+                <th>Assistir</th>
+                <th></th>
               </tr>
-            <% end %>
-          </tbody>
-        </table>
-      </div>
-    </div>
+            </thead>
 
-    <div class="sunday-lectures d-none pt-4">
-      <div class="table-responsive">
-        <table class="table">
-          <thead class="thead-light">
-            <tr>
-              <th>Título</th>
-              <th>Palestrante</th>
-              <th>Assistir</th>
-              <th></th>
-            </tr>
-          </thead>
-
-          <tbody>
-            <% @lectures.sunday.each do |lecture| %>
-              <tr>
-                <td>
-                  <strong><%= lecture.name %></strong>
-                </td>
-                <td><%= lecture.speaker %></td>
-                <td align="right"><%= link_to 'ASSISTIR PALESTRA', event_lecture_path(lecture), class: 'btn btn-warning btn-sm' %></td>
-              </tr>
-            <% end %>
-          </tbody>
-        </table>
+            <tbody>
+              <% @lectures.sunday.each do |lecture| %>
+                <tr>
+                  <td>
+                    <strong><%= lecture.name %></strong>
+                  </td>
+                  <td><%= lecture.speaker %></td>
+                  <td align="right"><%= link_to 'ASSISTIR PALESTRA', event_lecture_path(lecture), class: 'btn btn-warning btn-sm' %></td>
+                </tr>
+              <% end %>
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
   </div>

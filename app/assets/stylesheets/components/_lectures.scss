@@ -17,3 +17,13 @@
     }
   }
 }
+
+@media screen and (max-width: 767px) {
+  .lectures {
+    .day-of-week {
+      h2 {
+        font-size: 16px;
+      }
+    }
+  }
+}

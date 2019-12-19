@@ -330,7 +330,7 @@ Lecture.create(
 
 Lecture.create(
   day: 'saturday',
-  number: 6,
+  number: 7,
   name: 'Produção animal e meio ambiente: mitos, entraves e papel do consumidor',
   speaker: 'Anna Flávia',
   video_url: 'VgJR1bC3gYQ'
@@ -338,7 +338,7 @@ Lecture.create(
 
 Lecture.create(
   day: 'saturday',
-  number: 7,
+  number: 6,
   name: 'As evidências da relação entre metabolismo e transtornos mentais mais comuns',
   speaker: 'Victor Sorrentino',
   video_url: 'VgJR1bC3gYQ'
@@ -349,14 +349,6 @@ Lecture.create(
   number: 8,
   name: 'Meditação, a ciência por trás da espiritualidade',
   speaker: 'Guilherme Takassi',
-  video_url: 'VgJR1bC3gYQ'
-)
-
-Lecture.create(
-  day: 'saturday',
-  number: 9,
-  name: 'Painel com convidados',
-  speaker: 'Todos do dia',
   video_url: 'VgJR1bC3gYQ'
 )
 
@@ -429,13 +421,5 @@ Lecture.create(
   number: 9,
   name: '-',
   speaker: 'Ítalo Marsili',
-  video_url: 'VgJR1bC3gYQ'
-)
-
-Lecture.create(
-  day: 'sunday',
-  number: 9,
-  name: 'Painel com convidados',
-  speaker: 'Todos do dia',
   video_url: 'VgJR1bC3gYQ'
 )

@@ -23,4 +23,34 @@
       transform: scale(1.1);
     }
   }
+
+  .online-event-mobile, .basis-plena-mobile {
+    color: $color-white;
+    border: 3px solid $color-white;
+
+    padding: 2em 1em;
+    font-family: 'Dunbar Tall';
+    font-size: 32px;
+    line-height: 35px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .online-event-mobile {
+    margin-top: 1em;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .select {
+    height: initial;
+    padding-bottom: 5em;
+
+    .online-event, .basis-plena {
+      width: 100%;
+
+      font-size: 32px;
+    }
+  }
 }
