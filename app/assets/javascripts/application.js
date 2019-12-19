@@ -23,10 +23,10 @@ $(document).on('turbolinks:load', function () {
   $(window).scroll(function () {
     var scroll = $(window).scrollTop();
     if (scroll < 75) {
-      $('.app-navbar').css('background', '#F2C935');
+      $(".app-navbar").css("background", "rgba(255, 255, 255, 0.3)");
       $('.project-navbar').css('background', 'rgba(255, 255, 255, 0.3)');
     } else {
-      $('.app-navbar').css('background', '#369C75');
+      $(".app-navbar").css("background", "#369C75");
       $('.project-navbar').css('background', '#D16908');
     }
   });

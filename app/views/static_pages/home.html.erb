@@ -1,8 +1,8 @@
+<%= render 'static_pages/home/banner' %>
+
 <div class="ticket-banner-wrapper">
   <%= render 'layouts/ticket_banner' %>
 </div>
-
-<%= render 'static_pages/home/banner' %>
 
 <%= render 'static_pages/home/about' %>
 
@@ -20,13 +20,13 @@
 
 <%# render 'static_pages/home/partners' %>
 
-<%= render 'layouts/ticket_banner' %>
+<%#= render 'layouts/ticket_banner' %>
 
-<%= render 'static_pages/home/official_agency' %>
+<%#= render 'static_pages/home/official_agency' %>
 
-<%= render 'static_pages/home/location' %>
+<%#= render 'static_pages/home/location' %>
 
-<div class="modal modal-changes" tabindex="-1" role="dialog">
+<%# <div class="modal modal-changes" tabindex="-1" role="dialog">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -54,11 +54,11 @@
       </div>
     </div>
   </div>
-</div>
+</div> %>
 
 <script>
   $(document).on('turbolinks:load', function() {
-    $('.modal-changes').modal('show');
+    // $('.modal-changes').modal('show');
 
     var image = document.getElementsByClassName('parallax-image');
     new simpleParallax(image);
