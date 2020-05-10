@@ -293,7 +293,7 @@ Lecture.create(
   number: 1,
   name: 'A dieta cetogênica: como fazê-la corretamente para uma recomposição corporal ideal',
   speaker: 'Luis Villaseñor',
-  video_url: 'VgJR1bC3gYQ'
+  video_url: 'w-bDp4aLJHw'
 )
 
 Lecture.create(
@@ -301,7 +301,7 @@ Lecture.create(
   number: 2,
   name: 'Proteínas e saúde renal: uma análise baseada em evidências',
   speaker: 'José Neto',
-  video_url: 'VgJR1bC3gYQ'
+  video_url: 'mFLfS50e2RI'
 )
 
 Lecture.create(
@@ -317,7 +317,7 @@ Lecture.create(
   number: 4,
   name: 'Um estilo de vida saudável, começa com o que você come',
   speaker: 'Djulye Marquato',
-  video_url: 'VgJR1bC3gYQ'
+  video_url: 'ITDm6sMteWg'
 )
 
 Lecture.create(
